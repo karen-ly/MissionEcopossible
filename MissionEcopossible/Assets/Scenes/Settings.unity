@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 429143550}
   - component: {fileID: 429143551}
   m_Layer: 5
-  m_Name: Slider (1)
+  m_Name: sliderEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1213,7 +1213,7 @@ GameObject:
   - component: {fileID: 1073770706}
   - component: {fileID: 1073770707}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: sliderBM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
