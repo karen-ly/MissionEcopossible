@@ -31,6 +31,7 @@ public class Submarine : MonoBehaviour
     void Update()
     {
         SubmarineMoveX();
+        ClawMoveY();
 
         //updating end points of the line renderer as the subBody and claw move
         lineRenderer.SetPosition (0, claw.transform.position);
@@ -46,6 +47,12 @@ public class Submarine : MonoBehaviour
         }
         else{
             transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
+
+    void ClawMoveY(){
+        if(Input.GetKeyDown(KeyCode.DownArrow)){
+            claw.transform.Translate(0, -0.05f,0);
         }
     }
 }
