@@ -225,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 976084283}
   sentences:
+  - "Dede: Hi, I\u2019m Dede, a sea turtle who lives on the coast of Florida!"
   - 'Dede: Let me show you around my home!'
   - "Dede: Look, it\u2019s my friend Cece from elementary school! I wonder why she\u2019s
     here... "
@@ -243,7 +244,6 @@ MonoBehaviour:
   - "Bebe: Let\u2019s just pack up our stuff and go. "
   - "Dede: This is Shark Bebe, he\u2019s the worst..."
   - "Cece: We have to do something\u2026 anything\u2026 "
-  - 
   typingSpeed: 0.07
   continueButton: {fileID: 412268382}
 --- !u!4 &232848638

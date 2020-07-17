@@ -16,8 +16,7 @@ public class nameTransfer : MonoBehaviour
 
     public void StoreName() {
         theName = inputField.GetComponent<Text>().text;
-        textDisplay.GetComponent<Text>().text = "Hi " + theName + "! My name is Dede, "
-                                                + "I'm a a sea turtle who lives on the coast of Florida! "; // The welcome sentence
+        textDisplay.GetComponent<Text>().text = "Hi " + theName + "!"; // The welcome sentence
     }
 
     // IEnumerator Type() {
