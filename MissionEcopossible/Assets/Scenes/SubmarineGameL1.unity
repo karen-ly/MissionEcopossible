@@ -174,12 +174,12 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1611520553
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 2.1, z: 0}
+  - {x: 0, y: 3, z: 1}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -459,6 +459,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delta: 1.5
   speed: 1
+  claw: {fileID: 0}
+  subBody: {fileID: 0}
+  clawExtension: {fileID: 0}
+  lineRenderer: {fileID: 0}
 --- !u!1 &1707395934
 GameObject:
   m_ObjectHideFlags: 0
