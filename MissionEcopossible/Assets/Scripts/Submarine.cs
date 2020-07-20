@@ -11,7 +11,7 @@ public class Submarine : MonoBehaviour
     public GameObject subBody;
     public GameObject clawExtension;
     public LineRenderer lineRenderer;
-    private bool downKeyPressed;
+    private bool screenPressed;
     public const int clawYMaxThreshold = 2; // maximum y value that claw should not exceed when going up
     public const int clawYMinThreshold = -3; //// minimum y value that claw should not go below when going down
 
@@ -24,7 +24,7 @@ public class Submarine : MonoBehaviour
         subBody = GameObject.Find("subBody");
         clawExtension = GameObject.Find("clawExtension");
         lineRenderer = clawExtension.GetComponent<LineRenderer> ();
-        downKeyPressed = false;
+        screenPressed = false;
 
         // Setting the line renderer endpoints to the subBody and claw respectively
         lineRenderer.SetPosition(0, claw.transform.position);
@@ -55,20 +55,22 @@ public class Submarine : MonoBehaviour
     }
 
     void ClawMoveY(){
-        // Get whether down key is held down or not
-        if(Input.GetKeyDown(KeyCode.DownArrow)){
-            downKeyPressed = true;
+        // Get whether screen is pressed or not
+        foreach(Touch touch in Input.touches){
+            if(touch.phase == TouchPhase.Began){
+                screenPressed = true;
+            }
+            else if(touch.phase == TouchPhase.Ended){
+                screenPressed = false;
+            }
         }
-        else if(Input.GetKeyUp(KeyCode.DownArrow)){
-            downKeyPressed = false;
-        }
-        
+
         // Claw movement
-        if(downKeyPressed && (claw.transform.position.y>clawYMinThreshold)){
+        if(screenPressed && (claw.transform.position.y>clawYMinThreshold)){
             claw.transform.Translate(0, -0.05f,0);
         }
-        else if(!downKeyPressed && (claw.transform.position.y<clawYMaxThreshold)){
-            claw.transform.Translate(0, 0.01f,0);
+        else if(!screenPressed && (claw.transform.position.y<clawYMaxThreshold)){
+            claw.transform.Translate(0, 0.05f,0);
         }
     }
 }
