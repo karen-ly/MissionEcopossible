@@ -5,7 +5,8 @@ using UnityEngine;
 public class Submarine : MonoBehaviour
 {
     public float delta = 1.8f; // Amount to move left and right from the start point
-    public float speed = 1f; 
+    public float subSpeed = 1f; 
+    public float clawSpeed = 0.08f; 
     private Vector3 startPos;
     public GameObject claw;
     public GameObject subBody;
@@ -44,9 +45,11 @@ public class Submarine : MonoBehaviour
 
     void SubmarineMoveX(){
         Vector3 v = startPos;
-        v.x += delta * Mathf.Sin (Time.time * speed);
+        v.x += delta * Mathf.Sin (Time.time * subSpeed);
         transform.position = v;
-        if(Mathf.Cos (Time.time * speed)>0){
+
+        // Flips the image of the sub when it changes direction
+        if(Mathf.Cos (Time.time * subSpeed)>0){
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         else{
@@ -67,10 +70,10 @@ public class Submarine : MonoBehaviour
 
         // Claw movement
         if(screenPressed && (claw.transform.position.y>clawYMinThreshold)){
-            claw.transform.Translate(0, -0.1f,0);
+            claw.transform.Translate(0, -clawSpeed,0);
         }
         else if(!screenPressed && (claw.transform.position.y<clawYMaxThreshold)){
-            claw.transform.Translate(0, 0.1f,0);
+            claw.transform.Translate(0, clawSpeed,0);
         }
     }
 }
