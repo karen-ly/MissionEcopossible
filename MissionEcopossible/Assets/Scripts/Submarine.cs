@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Submarine : MonoBehaviour
 {
-    public float delta = 1.5f; // Amount to move left and right from the start point
+    public float delta = 1.8f; // Amount to move left and right from the start point
     public float speed = 1f; 
     private Vector3 startPos;
     public GameObject claw;
@@ -67,10 +67,10 @@ public class Submarine : MonoBehaviour
 
         // Claw movement
         if(screenPressed && (claw.transform.position.y>clawYMinThreshold)){
-            claw.transform.Translate(0, -0.05f,0);
+            claw.transform.Translate(0, -0.1f,0);
         }
         else if(!screenPressed && (claw.transform.position.y<clawYMaxThreshold)){
-            claw.transform.Translate(0, 0.05f,0);
+            claw.transform.Translate(0, 0.1f,0);
         }
     }
 }
