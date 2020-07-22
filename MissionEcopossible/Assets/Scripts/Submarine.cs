@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Submarine : MonoBehaviour
 {
-    public float delta = 1.8f; // Amount to move left and right from the start point
-    public float subSpeed = 1f; 
-    public float clawSpeed = 0.08f; 
+    public float delta; // Amount to move left and right from the start point
+    public float subSpeed; 
+    public float clawSpeed; 
     private Vector3 startPos;
     public GameObject claw;
     public GameObject subBody;
@@ -27,6 +28,14 @@ public class Submarine : MonoBehaviour
         lineRenderer = clawExtension.GetComponent<LineRenderer> ();
         screenPressed = false;
 
+        // Settings based on level
+        string sceneName = SceneManager.GetActiveScene().name;
+        if(sceneName == "SubmarineGameL2"){
+            delta = 1.8f;
+            subSpeed = 1f;
+            clawSpeed = 0.08f;
+        }
+
         // Setting the line renderer endpoints to the subBody and claw respectively
         lineRenderer.SetPosition(0, claw.transform.position);
         lineRenderer.SetPosition(1, subBody.transform.position);
@@ -45,15 +54,15 @@ public class Submarine : MonoBehaviour
 
     void SubmarineMoveX(){
         Vector3 v = startPos;
-        v.x += delta * Mathf.Sin (Time.time * subSpeed);
+        v.x += delta * -Mathf.Sin (Time.time * subSpeed);
         transform.position = v;
 
         // Flips the image of the sub when it changes direction
-        if(Mathf.Cos (Time.time * subSpeed)>0){
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        if(-Mathf.Cos (Time.time * subSpeed)>0){
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
         else{
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
