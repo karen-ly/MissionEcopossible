@@ -470,7 +470,8 @@ AudioSource:
   m_GameObject: {fileID: 104065577}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5587465404318142214, guid: 77a42b4207b7347e8bf89f40a290f10b,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: dce56112f47ab46d9b5d5dee860727be, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1093,6 +1094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 429143550}
   - component: {fileID: 429143551}
+  - component: {fileID: 429143552}
   m_Layer: 5
   m_Name: sliderEffects
   m_TagString: Untagged
@@ -1172,6 +1174,21 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &429143552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429143549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812ed80cc5edb405dabf682054ac4c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 429143551}
+  mixer: {fileID: 24100000, guid: 77a42b4207b7347e8bf89f40a290f10b, type: 2}
+  parameterName: SoundEffects
 --- !u!1 &490715245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,7 +1789,8 @@ AudioSource:
   m_GameObject: {fileID: 1088375070}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5587465404318142214, guid: 77a42b4207b7347e8bf89f40a290f10b,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: e62f54758869d44afa33d87f90f0b70a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
