@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Trash : MonoBehaviour
 {
+    public trashItemPopUpController popUp;
     public GameObject claw;
     public GameObject trashItem1;
     public GameObject trashItem2;
@@ -67,6 +68,8 @@ public class Trash : MonoBehaviour
                 // Move trashItam out of frame
                 trashItems[trashCount].transform.position = new Vector2(0, -6);
                 trashCount++;
+
+                popUp.Display();
 
                 // Add next trashItem to screen
                 if(trashCount < trashItems.Length){
