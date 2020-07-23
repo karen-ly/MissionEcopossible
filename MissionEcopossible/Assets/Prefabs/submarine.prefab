@@ -146,8 +146,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.320583, g: 0.4339623, b: 0.21493414, a: 1}
-      key1: {r: 0.32156864, g: 0.43529412, b: 0.21568628, a: 1}
+      key0: {r: 0.74509805, g: 0.5176471, b: 0.2, a: 1}
+      key1: {r: 0.745283, g: 0.5156902, b: 0.20038268, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -361,7 +361,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.7}
+    oldSize: {x: 1.02, y: 0.74}
     newSize: {x: 1, y: 0.7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
