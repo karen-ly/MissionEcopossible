@@ -57,8 +57,27 @@ public class trashItemPopUpController : MonoBehaviour
     public void Display(int itemIndex){
         itemPopUpUI.SetActive(true);
         trashItemImages[itemIndex].SetActive(true);
-        itemName.text = "Name: " + itemNames[itemIndex];
-        itemCategory.text = "Category: " + itemCategories[itemIndex];
+
+        // Change display text color based on category
+        if(itemCategories[itemIndex]=="Recycling"){
+            itemName.color = Color.blue;
+            itemCategory.color = Color.blue;
+        }
+        else if(itemCategories[itemIndex]=="Compost"){
+            itemName.color = new Color32(16, 140, 36, 255);
+            itemCategory.color = new Color32(16, 140, 36, 255);
+        }
+        else if(itemCategories[itemIndex]=="Landfill"){
+            itemName.color = Color.gray;
+            itemCategory.color = Color.gray;
+        }
+        else{
+            itemName.color = Color.red;
+            itemCategory.color = Color.red;
+        }
+
+        itemName.text = itemNames[itemIndex];
+        itemCategory.text = itemCategories[itemIndex];
         displayedItemIndex = itemIndex;
         Time.timeScale = 0f; // Freezes game
         isDisplayed = true;
