@@ -7,16 +7,6 @@ public class Trash : MonoBehaviour
 {
     public trashItemPopUpController popUp;
     public GameObject claw;
-    public GameObject trashItem1;
-    public GameObject trashItem2;
-    public GameObject trashItem3;
-    public GameObject trashItem4;
-    public GameObject trashItem5;
-    public GameObject trashItem6;
-    public GameObject trashItem7;
-    public GameObject trashItem8;
-    public GameObject trashItem9;
-    public GameObject trashItem10;
     public GameObject[] trashItems;
     public Vector2[] trashPositions;
     public int trashCount;
@@ -25,19 +15,9 @@ public class Trash : MonoBehaviour
     void Start()
     {
         claw = GameObject.Find("claw");
-        trashItem1 = GameObject.Find("trashItem1");
-        trashItem2 = GameObject.Find("trashItem2");
-        trashItem3 = GameObject.Find("trashItem3");
-        trashItem4 = GameObject.Find("trashItem4");
-        trashItem5 = GameObject.Find("trashItem5");
-        trashItem6 = GameObject.Find("trashItem6");
-        trashItem7 = GameObject.Find("trashItem7");
-        trashItem8 = GameObject.Find("trashItem8");
-        trashItem9 = GameObject.Find("trashItem9");
-        trashItem10 = GameObject.Find("trashItem10");
 
         // Array to hold all the trash items
-        trashItems = new GameObject[] {trashItem1,trashItem2,trashItem3,trashItem4,trashItem5,trashItem6,trashItem7,trashItem8,trashItem9,trashItem10};
+        trashItems = new GameObject[] {GameObject.Find("trashItem1"),GameObject.Find("trashItem2"),GameObject.Find("trashItem3"),GameObject.Find("trashItem4"),GameObject.Find("trashItem5"),GameObject.Find("trashItem6"),GameObject.Find("trashItem7"),GameObject.Find("trashItem8"),GameObject.Find("trashItem9"),GameObject.Find("trashItem10")};
 
         // Settings based on level
         string sceneName = SceneManager.GetActiveScene().name;
