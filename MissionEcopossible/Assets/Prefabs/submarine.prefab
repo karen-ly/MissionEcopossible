@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 1637266544966605846}
   - component: {fileID: 1637266544966605849}
   - component: {fileID: 1434796343726701601}
+  - component: {fileID: 1939911471374118498}
   m_Layer: 0
   m_Name: claw
   m_TagString: Untagged
@@ -357,7 +358,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014676511, y: 0.107627936}
+  m_Offset: {x: 0.0048921406, y: 0.104971446}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -368,5 +369,26 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.52056754, y: 0.17164503}
+  m_Size: {x: 0.2857436, y: 0.16643353}
   m_EdgeRadius: 0
+--- !u!50 &1939911471374118498
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637266544966605848}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
