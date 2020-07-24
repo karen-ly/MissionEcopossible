@@ -43,7 +43,7 @@ public class Trash : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
         if(sceneName == "SubmarineGameL2"){
             // Array to hold start position of each trash item
-            trashPositions = new Vector2[] {new Vector2(0, -1), new Vector2(1, -3), new Vector2(-1.5f, 0.5f), new Vector2(0, -2.5f), new Vector2(1, 1), new Vector2(-1.5f, 0.5f), new Vector2(0, 0), new Vector2(1.8f, -1), new Vector2(-0.5f, -2.5f), new Vector2(-1, -1)};
+            trashPositions = new Vector2[] {new Vector2(0, -1), new Vector2(1, -3), new Vector2(-1.5f, 0.5f), new Vector2(0, -2.5f), new Vector2(1, 1), new Vector2(-1.5f, 0.5f), new Vector2(0, 0), new Vector2(1.8f, -1), new Vector2(-0.5f, -2.5f), new Vector2(-3, -1)};
         }
         
         trashCount = 0;
@@ -65,13 +65,13 @@ public class Trash : MonoBehaviour
             if(claw.GetComponent<BoxCollider2D>().bounds.Intersects(trashItems[trashCount].GetComponent<PolygonCollider2D>().bounds)){
                 // TODO: add sound effect
 
-                // Move trashItam out of frame
+                // Move trashItem out of frame
                 trashItems[trashCount].transform.position = new Vector2(0, -6);
-                trashCount++;
 
-                popUp.Display();
+                popUp.Display(trashCount);
 
                 // Add next trashItem to screen
+                trashCount++;
                 if(trashCount < trashItems.Length){
                     trashItems[trashCount].transform.position = trashPositions[trashCount];
                 }
