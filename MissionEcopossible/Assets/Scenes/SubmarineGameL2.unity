@@ -1931,7 +1931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: 50}
+  m_AnchoredPosition: {x: -50, y: 50}
   m_SizeDelta: {x: 250, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1407634455
@@ -2005,8 +2005,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 310, y: 50}
+  m_AnchoredPosition: {x: 0, y: -170}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1553278863
 MonoBehaviour:
@@ -2161,19 +2161,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b5cc082bfb1f4898925438f4e5fe549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayedItemIndex: 0
-  itemPopUpUI: {fileID: 373114972}
-  trashItem1Image: {fileID: 0}
-  trashItem2Image: {fileID: 0}
-  trashItem3Image: {fileID: 0}
-  trashItem4Image: {fileID: 0}
-  trashItem5Image: {fileID: 0}
-  trashItem6Image: {fileID: 0}
-  trashItem7Image: {fileID: 0}
-  trashItem8Image: {fileID: 0}
-  trashItem9Image: {fileID: 0}
-  trashItem10Image: {fileID: 0}
+  itemName: {fileID: 0}
+  itemCategory: {fileID: 0}
+  itemNames: []
+  itemCategories: []
   trashItemImages: []
+  itemPopUpUI: {fileID: 373114972}
+  displayedItemIndex: 0
 --- !u!1 &1646222941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2634,8 +2628,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 310, y: 50}
+  m_AnchoredPosition: {x: 0, y: -80}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1999921540
 MonoBehaviour:
