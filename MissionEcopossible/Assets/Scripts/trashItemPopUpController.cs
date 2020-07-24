@@ -1,46 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; // needed to use Text
+using UnityEngine.SceneManagement;
 
 public class trashItemPopUpController : MonoBehaviour
 {
+    public Text itemName;
+    public Text itemCategory;
+    public string[] itemNames;
+    public string[] itemCategories;
+    public GameObject[] trashItemImages;
+    public GameObject itemPopUpUI;
     public static bool isDisplayed;
     public int displayedItemIndex;
-    public GameObject itemPopUpUI;
-    public GameObject trashItem1Image;
-    public GameObject trashItem2Image;
-    public GameObject trashItem3Image;
-    public GameObject trashItem4Image;
-    public GameObject trashItem5Image;
-    public GameObject trashItem6Image;
-    public GameObject trashItem7Image;
-    public GameObject trashItem8Image;
-    public GameObject trashItem9Image;
-    public GameObject trashItem10Image;
-    public GameObject[] trashItemImages;
 
     // Start is called before the first frame update
     void Start()
     {
-        trashItem1Image = GameObject.Find("trashItem1Image");
-        trashItem2Image = GameObject.Find("trashItem2Image");
-        trashItem3Image = GameObject.Find("trashItem3Image");
-        trashItem4Image = GameObject.Find("trashItem4Image");
-        trashItem5Image = GameObject.Find("trashItem5Image");
-        trashItem6Image = GameObject.Find("trashItem6Image");
-        trashItem7Image = GameObject.Find("trashItem7Image");
-        trashItem8Image = GameObject.Find("trashItem8Image");
-        trashItem9Image = GameObject.Find("trashItem9Image");
-        trashItem10Image = GameObject.Find("trashItem10Image");
+        itemName = GameObject.Find("ItemName").GetComponent<Text>();
+        itemCategory = GameObject.Find("ItemCategory").GetComponent<Text>();
 
-        trashItemImages = new GameObject[] {trashItem1Image,trashItem2Image,trashItem3Image,trashItem4Image,trashItem5Image,trashItem6Image,trashItem7Image,trashItem8Image,trashItem9Image,trashItem10Image};
+        // Creating two string arrays hoding the text to be displayed for each item based on the Scene
+        string sceneName = SceneManager.GetActiveScene().name;
+        if(sceneName == "SubmarineGameL2"){
+            itemNames = new string[] {"Apple Core", "Plastic Bottle", "Newspaper", "Pizza Box", "Fish Bone", "Styrofoam", "Cardboard", "Leaf", "Battery", "Glass"};
+            itemCategories = new string[] {"Compost", "Recycling", "Recycling", "Landfill", "Compost", "Landfill", "Recycling", "Compost", "Harmful", "Landfill"};
+        }
+
+        // Creating an array of all the trashItemImages
+        trashItemImages = new GameObject[] {GameObject.Find("trashItem1Image"),GameObject.Find("trashItem2Image"),GameObject.Find("trashItem3Image"),GameObject.Find("trashItem4Image"),GameObject.Find("trashItem5Image"),GameObject.Find("trashItem6Image"),GameObject.Find("trashItem7Image"),GameObject.Find("trashItem8Image"),GameObject.Find("trashItem9Image"),GameObject.Find("trashItem10Image")};
     
         for(int i=0; i<trashItemImages.Length; i++){
             trashItemImages[i].SetActive(false);
         }
 
         itemPopUpUI = GameObject.Find("Panel");
-        itemPopUpUI.SetActive(false);
+        itemPopUpUI.SetActive(false); // hides entire pop up at start of game
         isDisplayed = false;
         displayedItemIndex = 0;
     }
@@ -61,6 +57,8 @@ public class trashItemPopUpController : MonoBehaviour
     public void Display(int itemIndex){
         itemPopUpUI.SetActive(true);
         trashItemImages[itemIndex].SetActive(true);
+        itemName.text = "Name: " + itemNames[itemIndex];
+        itemCategory.text = "Category: " + itemCategories[itemIndex];
         displayedItemIndex = itemIndex;
         Time.timeScale = 0f; // Freezes game
         isDisplayed = true;

@@ -50,7 +50,6 @@ public class Trash : MonoBehaviour
 
         // Move first trash item to its starting position
         trashItems[trashCount].transform.position = trashPositions[trashCount];
-        //trashItem1.GetComponent<ClawCollide>().IsPickedUp();
     }
 
     // Update is called once per frame
@@ -65,6 +64,7 @@ public class Trash : MonoBehaviour
             // Chack if bounds of the claw and trashItam colliders overlap
             if(trashItems[trashCount].GetComponent<ClawCollide>().IsPickedUp()){
                 // TODO: add sound effect
+                // TODO: move claw's position to the top after each pop up so new item isn't accidentally picked up
 
                 // Move trashItem out of frame
                 trashItems[trashCount].transform.position = new Vector2(0, -6);
@@ -80,7 +80,6 @@ public class Trash : MonoBehaviour
         }
     }
 
-    // TODO: popup method that freezes game and returns once user clicks x; call in ClawPickup after collision
     // TODO: text when you finish game
     // TODO: instructions for submarine game before it starts
 }
