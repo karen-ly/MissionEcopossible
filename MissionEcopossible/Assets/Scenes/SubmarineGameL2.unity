@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 132127449}
   - component: {fileID: 132127451}
   - component: {fileID: 132127450}
+  - component: {fileID: 132127452}
   m_Layer: 0
   m_Name: trashItem4
   m_TagString: Untagged
@@ -355,6 +356,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &132127452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132127448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b390ab8e21994520a1b440a836dde7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &166296133
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,6 +675,7 @@ GameObject:
   - component: {fileID: 330713486}
   - component: {fileID: 330713488}
   - component: {fileID: 330713487}
+  - component: {fileID: 330713489}
   m_Layer: 0
   m_Name: trashItem8
   m_TagString: Untagged
@@ -829,6 +843,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &330713489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330713485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b390ab8e21994520a1b440a836dde7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &373114972
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +954,7 @@ GameObject:
   - component: {fileID: 394365690}
   - component: {fileID: 394365692}
   - component: {fileID: 394365691}
+  - component: {fileID: 394365693}
   m_Layer: 0
   m_Name: trashItem6
   m_TagString: Untagged
@@ -1081,6 +1108,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &394365693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394365689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b390ab8e21994520a1b440a836dde7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &464097694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,6 +1205,7 @@ GameObject:
   - component: {fileID: 528466928}
   - component: {fileID: 528466930}
   - component: {fileID: 528466929}
+  - component: {fileID: 528466931}
   m_Layer: 0
   m_Name: trashItem9
   m_TagString: Untagged
@@ -1279,6 +1319,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &528466931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528466927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b390ab8e21994520a1b440a836dde7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &558518099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1342,7 @@ GameObject:
   - component: {fileID: 558518100}
   - component: {fileID: 558518102}
   - component: {fileID: 558518101}
+  - component: {fileID: 558518103}
   m_Layer: 0
   m_Name: trashItem10
   m_TagString: Untagged
@@ -1398,6 +1451,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &558518103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558518099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b390ab8e21994520a1b440a836dde7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &715920188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,6 +2185,7 @@ GameObject:
   - component: {fileID: 1646222943}
   - component: {fileID: 1646222942}
   - component: {fileID: 1646222944}
+  - component: {fileID: 1646222945}
   m_Layer: 0
   m_Name: trashItem1
   m_TagString: Untagged
@@ -2291,6 +2357,18 @@ PolygonCollider2D:
       - {x: -0.59999996, y: -0.52}
       - {x: -0.61, y: -0.48}
       - {x: -0.63, y: -0.45999998}
+--- !u!114 &1646222945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646222941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b390ab8e21994520a1b440a836dde7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1707395934
 GameObject:
   m_ObjectHideFlags: 0
@@ -2611,6 +2689,7 @@ GameObject:
   - component: {fileID: 2024756171}
   - component: {fileID: 2024756173}
   - component: {fileID: 2024756172}
+  - component: {fileID: 2024756174}
   m_Layer: 0
   m_Name: trashItem5
   m_TagString: Untagged
@@ -2969,6 +3048,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2024756174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024756170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b390ab8e21994520a1b440a836dde7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2079504253
 GameObject:
   m_ObjectHideFlags: 0
@@ -2980,6 +3071,7 @@ GameObject:
   - component: {fileID: 2079504254}
   - component: {fileID: 2079504256}
   - component: {fileID: 2079504255}
+  - component: {fileID: 2079504257}
   m_Layer: 0
   m_Name: trashItem7
   m_TagString: Untagged
@@ -3126,6 +3218,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2079504257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079504253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b390ab8e21994520a1b440a836dde7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1637266544502557854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3133,6 +3237,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1434796343726701601, guid: 117b80b97ad1c418d80f9def9a728d08,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1637266544099526722, guid: 117b80b97ad1c418d80f9def9a728d08,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3192,6 +3301,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: submarine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2215152001030356683, guid: 117b80b97ad1c418d80f9def9a728d08,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2215152001030356683, guid: 117b80b97ad1c418d80f9def9a728d08,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 117b80b97ad1c418d80f9def9a728d08, type: 3}
@@ -3275,6 +3394,7 @@ GameObject:
   - component: {fileID: 8004295246054423611}
   - component: {fileID: 8004295246054423610}
   - component: {fileID: 8004295246054423612}
+  - component: {fileID: 8004295246054423613}
   m_Layer: 0
   m_Name: trashItem2
   m_TagString: Untagged
@@ -3448,6 +3568,18 @@ PolygonCollider2D:
       - {x: 1.91, y: 4.725}
       - {x: 1.93, y: 4.745}
       - {x: 1.93, y: 4.775}
+--- !u!114 &8004295246054423613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004295246054423609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b390ab8e21994520a1b440a836dde7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8004295246614685553
 GameObject:
   m_ObjectHideFlags: 0
@@ -3459,6 +3591,7 @@ GameObject:
   - component: {fileID: 8004295246614685555}
   - component: {fileID: 8004295246614685554}
   - component: {fileID: 8004295246614685556}
+  - component: {fileID: 8004295246614685557}
   m_Layer: 0
   m_Name: trashItem3
   m_TagString: Untagged
@@ -3599,3 +3732,15 @@ PolygonCollider2D:
       - {x: -5.4449997, y: -0.93}
       - {x: -5.4249997, y: -0.9}
       - {x: -5.4249997, y: -0.64}
+--- !u!114 &8004295246614685557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004295246614685553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b390ab8e21994520a1b440a836dde7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
