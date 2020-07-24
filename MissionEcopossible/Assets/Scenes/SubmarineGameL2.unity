@@ -1668,16 +1668,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popUp: {fileID: 1578540306}
   claw: {fileID: 0}
-  trashItem1: {fileID: 0}
-  trashItem2: {fileID: 0}
-  trashItem3: {fileID: 0}
-  trashItem4: {fileID: 0}
-  trashItem5: {fileID: 0}
-  trashItem6: {fileID: 0}
-  trashItem7: {fileID: 0}
-  trashItem8: {fileID: 0}
-  trashItem9: {fileID: 0}
-  trashItem10: {fileID: 0}
   trashItems: []
   trashPositions: []
   trashCount: 0
@@ -2148,7 +2138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1578540302
 MonoBehaviour:
   m_ObjectHideFlags: 0
