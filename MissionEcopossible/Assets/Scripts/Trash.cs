@@ -44,7 +44,9 @@ public class Trash : MonoBehaviour
             // Chack if bounds of the claw and trashItam colliders overlap
             if(trashItems[trashCount].GetComponent<ClawCollide>().IsPickedUp()){
                 // TODO: add sound effect
-                // TODO: move claw's position to the top after each pop up so new item isn't accidentally picked up
+
+                // Moves claw's position to the top
+                claw.transform.position = new Vector2(claw.transform.position.x, 2);
 
                 // Move trashItem out of frame
                 trashItems[trashCount].transform.position = new Vector2(0, -6);
