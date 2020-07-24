@@ -50,6 +50,7 @@ public class Trash : MonoBehaviour
 
         // Move first trash item to its starting position
         trashItems[trashCount].transform.position = trashPositions[trashCount];
+        //trashItem1.GetComponent<ClawCollide>().IsPickedUp();
     }
 
     // Update is called once per frame
@@ -62,7 +63,7 @@ public class Trash : MonoBehaviour
     void ClawPickup(){
         if(trashCount < trashItems.Length){
             // Chack if bounds of the claw and trashItam colliders overlap
-            if(claw.GetComponent<BoxCollider2D>().bounds.Intersects(trashItems[trashCount].GetComponent<PolygonCollider2D>().bounds)){
+            if(trashItems[trashCount].GetComponent<ClawCollide>().IsPickedUp()){
                 // TODO: add sound effect
 
                 // Move trashItem out of frame
