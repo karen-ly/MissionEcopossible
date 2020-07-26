@@ -426,11 +426,13 @@ MonoBehaviour:
   m_text: "This app was created by ECOders, a team consisting of Anisha Kabir, Fan
     Wang, Karen Ly, and Zhuofan Li, who participated in Dandilyonn\u2019s 2020 SEEDs
     program. Mission Ecopossible is an interactive mobile game that seeks to educate
-    users about ocean pollution and the proper disposal of waste.\n\n\n\n\n\nGraphics
-    designed by Fan Wang\n\n\nMusic Used:\nJeremy Blake - \"Powerup!\"\nhttps://www.youtube.com/watch?v=l7SwiFWOQqM&amp;index=5\n\nSoundBible.com
-    - Blop Sound \nhttp://soundbible.com/2067-Blop.html\n\nAlexander - Nature Sounds
-    Ocean Waves For Relaxation\nhttp://www.orangefreesounds.com/nature-sounds-ocean-waves-for-relaxation/\n\n\nIcons
-    Used:\nDownloaded from Unity Asset Store\n\n\n"
+    users about ocean pollution and the proper disposal of waste\n\nGraphics designed
+    by Fan Wang\n\nMusic Used:\nJeremy Blake - \"Powerup!\"\nhttps://www.youtube.com/watch?v=l7SwiFWOQqM&amp;index=5\n\nAlexander
+    - Nature Sounds Ocean Waves For Relaxation\nhttp://www.orangefreesounds.com/nature-sounds-ocean-waves-for-relaxation/\n\nSound
+    Effects Used:\nSoundBible.com - Blop Sound \nhttp://soundbible.com/2067-Blop.html\n\nLT
+    Sound Effects - Free Sound Effect: Video Game Menu Select\nhttps://www.youtube.com/watch?v=X-aU6-cSRdA\n\nOMS
+    Royalty Free Music - Button 1\nhttps://www.youtube.com/watch?v=iFzgeVoA7DQ\n\nIcons
+    downloaded from Unity Asset Store\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50a10deff60d4454eae17950693cecbe, type: 2}
   m_sharedMaterial: {fileID: 3090066607061297460, guid: 50a10deff60d4454eae17950693cecbe,
@@ -459,8 +461,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 19.3
+  m_fontSizeBase: 19.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -500,12 +502,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 486943024}
-    characterCount: 667
+    characterCount: 859
     spriteCount: 0
-    spaceCount: 94
-    wordCount: 98
+    spaceCount: 112
+    wordCount: 132
     linkCount: 0
-    lineCount: 38
+    lineCount: 42
     pageCount: 1
     materialCount: 2
   m_isUsingLegacyAnimationComponent: 0
