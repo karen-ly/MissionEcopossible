@@ -12,14 +12,18 @@ public class Dialogue : MonoBehaviour
     // public string[] sentences;
 
     public TextMeshProUGUI textDisplay;
-    public string[] sentences;
+    public string[] sentences;  //Own class, object contains sentences and characters
     private int index;
     public float typingSpeed;
 
     public GameObject continueButton;
+    private AudioSource source;
+
+
 
     void Start() {
 
+        source = GetComponent<AudioSource>();
         StartCoroutine(Type());
 
     }
@@ -42,15 +46,17 @@ public class Dialogue : MonoBehaviour
     }
 
     public void NextSentence() {
-
+        source.Play();
         continueButton.SetActive(false);
 
         if (index < sentences.Length - 1) {
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
-
-        } else {
+            // Object: sentence string + face type
+            
+        } 
+        else if (index == sentences.Length - 1) {
             textDisplay.text = "";
             continueButton.SetActive(false);
         }
