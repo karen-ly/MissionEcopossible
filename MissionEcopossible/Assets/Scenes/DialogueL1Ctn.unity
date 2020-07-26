@@ -271,10 +271,9 @@ MonoBehaviour:
   sentences:
   - "Dede: Hi, I\u2019m Dede, a sea turtle who lives on the coast of Florida!"
   - 'Dede: Let me show you around my home!'
-  - "Dede: Wait, that's my friend Cece from elementary school! I wonder why she\u2019s
-    here... "
-  - 'Dede: Hi Cece! What are you doing back here? I thought you moved?'
-  - 'Cece: Hi! Nice to meet you both! '
+  - 'Dede: This is my friend Cece from elementary school, I haven''t seen her since
+    she moved.'
+  - 'Cece: Hi! Nice to meet you! '
   - 'Cece: My family and I just moved away from the north-central Pacific Ocean. '
   - 'Cece: There was too much trash floating everywhere to the point that we lost
     our home.'
@@ -284,6 +283,7 @@ MonoBehaviour:
   - "Cece: It\u2019s the garbage troops! We should clean it up before it\u2019s too
     late! "
   - "Cece: I don\u2019t want your home to be destroyed like my old one!"
+  - 
   - "Bebe: Don\u2019t even bother! There\u2019s no point in cleaning up."
   - "Bebe: Let\u2019s just pack up our stuff and go. "
   - "Dede: This is Shark Bebe, he\u2019s the worst..."
