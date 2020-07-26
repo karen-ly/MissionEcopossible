@@ -1762,7 +1762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 1073770707}
   mixer: {fileID: 24100000, guid: 77a42b4207b7347e8bf89f40a290f10b, type: 2}
-  parameterName: BackgroundMusic
+  parameterName: BM
 --- !u!1 &1088375070
 GameObject:
   m_ObjectHideFlags: 0
