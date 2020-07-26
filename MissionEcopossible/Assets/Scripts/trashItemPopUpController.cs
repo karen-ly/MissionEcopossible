@@ -14,6 +14,7 @@ public class trashItemPopUpController : MonoBehaviour
     public GameObject itemPopUpUI;
     public static bool isDisplayed;
     public int displayedItemIndex;
+    public Submarine subControlScript; // script for submarine controls
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +56,7 @@ public class trashItemPopUpController : MonoBehaviour
     }
 
     public void Display(int itemIndex){
+        subControlScript.Pause();
         itemPopUpUI.SetActive(true);
         trashItemImages[itemIndex].SetActive(true);
 
@@ -84,6 +86,7 @@ public class trashItemPopUpController : MonoBehaviour
     }
 
     void Close(){
+        subControlScript.Continue();
         itemPopUpUI.SetActive(false);
         trashItemImages[displayedItemIndex].SetActive(false);
         Time.timeScale = 1f; // Unfreezes game
