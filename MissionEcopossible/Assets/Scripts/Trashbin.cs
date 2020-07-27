@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Trashbin : MonoBehaviour, IDropHandler {
     
+    // Deal with trash item disappear here
     public void OnDrop(PointerEventData eventData) {
         Debug.Log("OnDrop");
         if (eventData.pointerDrag != null) {
