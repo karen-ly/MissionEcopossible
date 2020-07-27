@@ -16,10 +16,10 @@ public class Submarine : MonoBehaviour
     private bool screenPressed;
     public const int clawYMaxThreshold = 2; // maximum y value that claw should not exceed when going up
     public const int clawYMinThreshold = -3; //// minimum y value that claw should not go below when going down
+    private bool clawPause;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
         startPos = transform.position;
 
         claw = GameObject.Find("claw");
@@ -39,13 +39,16 @@ public class Submarine : MonoBehaviour
         // Setting the line renderer endpoints to the subBody and claw respectively
         lineRenderer.SetPosition(0, claw.transform.position);
         lineRenderer.SetPosition(1, subBody.transform.position);
+
+        clawPause = false;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        SubmarineMoveX();
-        ClawMoveY();
+    void Update(){
+        if(!clawPause){
+            SubmarineMoveX();
+            ClawMoveY();
+        }
 
         // Updating end points of the line renderer as the subBody and claw move
         lineRenderer.SetPosition(0, claw.transform.position);
@@ -84,5 +87,15 @@ public class Submarine : MonoBehaviour
         else if(!screenPressed && (claw.transform.position.y<clawYMaxThreshold)){
             claw.transform.Translate(0, clawSpeed,0);
         }
+    }
+
+    public void Pause(){
+        // Moves claw's position to the top
+        claw.transform.position = new Vector2(claw.transform.position.x, 2);
+        clawPause = true;
+    }
+
+    public void Continue(){
+        clawPause = false;
     }
 }

@@ -45,9 +45,6 @@ public class Trash : MonoBehaviour
             if(trashItems[trashCount].GetComponent<ClawCollide>().IsPickedUp()){
                 // TODO: add sound effect
 
-                // Moves claw's position to the top
-                claw.transform.position = new Vector2(claw.transform.position.x, 2);
-
                 // Move trashItem out of frame
                 trashItems[trashCount].transform.position = new Vector2(0, -6);
 
