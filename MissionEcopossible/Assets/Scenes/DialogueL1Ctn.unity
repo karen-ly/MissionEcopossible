@@ -374,6 +374,7 @@ MonoBehaviour:
   scenename: DialogueL1Ctn
   finishButton: {fileID: 947693183}
   continueButton: {fileID: 412268382}
+  source: {fileID: 2037589238}
 --- !u!4 &232848638
 Transform:
   m_ObjectHideFlags: 0
