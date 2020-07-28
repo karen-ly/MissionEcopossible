@@ -792,6 +792,18 @@ MonoBehaviour:
           m_StringArgument: DialogueL2
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1747221317}
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: dce56112f47ab46d9b5d5dee860727be,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &947693186
 MonoBehaviour:
   m_ObjectHideFlags: 0
