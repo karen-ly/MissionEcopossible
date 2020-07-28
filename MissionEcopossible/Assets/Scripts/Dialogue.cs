@@ -21,12 +21,11 @@ public class Dialogue : MonoBehaviour
     public GameObject finishButton;
 
     public GameObject continueButton;
-    private AudioSource source;
+    public AudioSource source;
 
 
     void Start() {
 
-        source = GetComponent<AudioSource>();
         StartCoroutine(Type());
 
     }
