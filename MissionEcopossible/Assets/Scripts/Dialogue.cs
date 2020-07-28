@@ -16,9 +16,12 @@ public class Dialogue : MonoBehaviour
     private int index;
     public float typingSpeed;
 
+    // newly added code
+    public string scenename;
+    public GameObject finishButton;
+
     public GameObject continueButton;
     private AudioSource source;
-
 
 
     void Start() {
@@ -56,8 +59,14 @@ public class Dialogue : MonoBehaviour
             // Object: sentence string + face type
             
         } 
+
+        // reached end of dialogue for scene
         else if (index == sentences.Length - 1) {
-            textDisplay.text = "";
+            // special case: no submarine game in level 1
+            if(scenename == "DialogueL1Ctn") {
+                textDisplay.text = "Congrats, you've completed this level!";
+                finishButton.SetActive(true);
+            }
             continueButton.SetActive(false);
         }
     }
