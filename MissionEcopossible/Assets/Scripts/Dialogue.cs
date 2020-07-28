@@ -66,6 +66,7 @@ public class Dialogue : MonoBehaviour
                 textDisplay.text = "Congrats, you've completed this level!";
                 finishButton.SetActive(true);
             }
+            // special case: level 5 (end of chapter 1) -> show message about future levels
             continueButton.SetActive(false);
         }
     }
