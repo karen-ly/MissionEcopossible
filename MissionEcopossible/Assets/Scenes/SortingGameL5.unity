@@ -690,6 +690,7 @@ GameObject:
   - component: {fileID: 312775147}
   - component: {fileID: 312775149}
   - component: {fileID: 312775150}
+  - component: {fileID: 312775151}
   m_Layer: 5
   m_Name: apple
   m_TagString: Untagged
@@ -778,6 +779,49 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &312775151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312775145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 643926845}
+          m_MethodName: DragApple
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 643926845}
+          m_MethodName: DropApple
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &314699019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 643926844}
+  - component: {fileID: 643926845}
   m_Layer: 0
   m_Name: SortingManager
   m_TagString: Untagged
@@ -1533,6 +1578,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &643926845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643926843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e637715ada88d4dbe4fd717e83deb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apple: {fileID: 312775145}
+  binHarmful: {fileID: 187951034}
+  binRecycle: {fileID: 2013962543}
+  binLandfill: {fileID: 1086247563}
+  binCompost: {fileID: 360656353}
 --- !u!1 &853323207
 GameObject:
   m_ObjectHideFlags: 0
