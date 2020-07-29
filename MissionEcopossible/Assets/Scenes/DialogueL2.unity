@@ -354,7 +354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Let's Help!
+  m_text: LET'S HELP!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50a10deff60d4454eae17950693cecbe, type: 2}
   m_sharedMaterial: {fileID: 3090066607061297460, guid: 50a10deff60d4454eae17950693cecbe,
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_textAlignment: 514
   m_characterSpacing: -2.86
   m_wordSpacing: -16.62
-  m_lineSpacing: 0
+  m_lineSpacing: 10.56
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1208,7 +1208,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_textAlignment: 258
   m_characterSpacing: 0
   m_wordSpacing: -33.68
@@ -1416,7 +1416,7 @@ MonoBehaviour:
   - "Cece: Come on you two! Let\u2019s use the submarine! "
   typingSpeed: 0.07
   scenename: DialogueL2
-  finishButton: {fileID: 0}
+  finishButton: {fileID: 1534604677}
   finalPanel: {fileID: 2116675076}
   continueButton: {fileID: 2075533107}
   source: {fileID: 587013272}
