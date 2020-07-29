@@ -1027,6 +1027,7 @@ GameObject:
   - component: {fileID: 360656354}
   - component: {fileID: 360656356}
   - component: {fileID: 360656355}
+  - component: {fileID: 360656357}
   m_Layer: 5
   m_Name: binCompost
   m_TagString: Untagged
@@ -1091,6 +1092,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360656353}
   m_CullTransparentMesh: 0
+--- !u!114 &360656357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360656353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af0fae47e8b65a4dab01b6b84be3612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &381975729
 GameObject:
   m_ObjectHideFlags: 0
