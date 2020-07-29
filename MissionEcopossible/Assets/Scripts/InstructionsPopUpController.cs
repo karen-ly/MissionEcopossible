@@ -9,6 +9,8 @@ public class InstructionsPopUpController : MonoBehaviour
     public GameObject instructionsPopUpUI;
     public Text instructText;
     public Text continueText;
+    public int nextDisplayedText = 0;
+    public bool isReadyForNext = false;
 
     // Start is called before the first frame update
     void Start(){
@@ -16,10 +18,33 @@ public class InstructionsPopUpController : MonoBehaviour
         instructionsPopUpUI = GameObject.Find("InstructionsPanel");
         instructText = GameObject.Find("InstructText").GetComponent<Text>();
         continueText = GameObject.Find("ContinueText").GetComponent<Text>();
+
+        StartCoroutine(waiter());
     }
 
     // Update is called once per frame
     void Update(){
-        
+        if(isReadyForNext){
+            foreach(Touch touch in Input.touches){
+                if(touch.phase == TouchPhase.Began){
+                    isReadyForNext = false;
+                    if(nextDisplayedText<instructions.Length){
+                        StartCoroutine(waiter());
+                    }
+                }
+            }
+        }
+    }
+
+    IEnumerator waiter(){
+        instructText.text = instructions[nextDisplayedText];
+        continueText.text = "";
+
+        yield return new WaitForSeconds(1.5f);
+
+        continueText.text = "Tap to Continue";
+
+        isReadyForNext = true;
+        nextDisplayedText++;
     }
 }

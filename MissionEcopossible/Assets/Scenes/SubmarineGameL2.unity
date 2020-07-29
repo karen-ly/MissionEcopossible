@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TAP TO CONTINUE
+  m_Text: 
 --- !u!222 &84542518
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2054,6 +2054,7 @@ MonoBehaviour:
   instructionsPopUpUI: {fileID: 0}
   instructText: {fileID: 0}
   continueText: {fileID: 0}
+  displayedText: 1
 --- !u!1 &1016941181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,7 +2801,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HELP DEDE AND CECE COLLECT TRASH WITH THE SUBMARINE!
+  m_Text: 
 --- !u!222 &1541370747
 CanvasRenderer:
   m_ObjectHideFlags: 0
