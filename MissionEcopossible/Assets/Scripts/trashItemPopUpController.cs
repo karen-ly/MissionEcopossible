@@ -36,7 +36,7 @@ public class trashItemPopUpController : MonoBehaviour
             trashItemImages[i].SetActive(false);
         }
 
-        itemPopUpUI = GameObject.Find("Panel");
+        itemPopUpUI = GameObject.Find("TrashItemPanel");
         itemPopUpUI.SetActive(false); // hides entire pop up at start of game
         isDisplayed = false;
         displayedItemIndex = 0;
