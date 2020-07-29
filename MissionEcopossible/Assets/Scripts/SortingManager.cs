@@ -19,14 +19,38 @@ public class SortingManager : MonoBehaviour
         binRecycleInitialPos = binRecycle.transform.position;
         binLandfillInitialPos = binLandfill.transform.position;
         binCompostInitialPos = binLandfill.transform.position;
-        
+
     }
 
 
-    public
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void DragApple() {
+
+        apple.transform.position = Input.mousePosition;
+
+    }
+
+    // public void DragApple() {
+
+    //     apple.transform.position = Input.mousePosition;
+
+    // }
+
+    // public void DragApple() {
+
+    //     apple.transform.position = Input.mousePosition;
+
+    // }
+    
+    public void DropApple() {
+
+        float Distance = Vector3.Distance(apple.transform.position, binCompost.transform.position);
+        if (Distance < 50) {
+            apple.transform.position = binCompost.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            apple.transform.position = appleInitialPos;
+        }
+    
     }
 }
