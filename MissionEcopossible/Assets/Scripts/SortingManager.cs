@@ -6,10 +6,12 @@ public class SortingManager : MonoBehaviour
 {
 
     
-    public GameObject apple, banana, binHarmful, binRecycle, binLandfill, binCompost; // Garbage and bin items
+    public GameObject apple, banana, bottle, 
+    binHarmful, binRecycle, binLandfill, binCompost; // Garbage and bin items
 
 
-    Vector2 appleInitialPos, bananaInitialPos, binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
+    Vector2 appleInitialPos, bananaInitialPos, bottleInitialPos, 
+    binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
     
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,7 @@ public class SortingManager : MonoBehaviour
         //Position of garbage items
         appleInitialPos = apple.transform.position;
         bananaInitialPos = banana.transform.position;
+        bottleInitialPos = bottle.transform.position;
 
         //Position of trash bins
         binHarmfulInitialPos = binHarmful.transform.position;
@@ -36,6 +39,12 @@ public class SortingManager : MonoBehaviour
     public void DragBanana() {
 
         banana.transform.position = Input.mousePosition;
+
+    }
+
+    public void DragBottle() {
+
+        bottle.transform.position = Input.mousePosition;
 
     }
 
@@ -67,6 +76,19 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             banana.transform.position = bananaInitialPos;
+        }
+    
+    }
+
+    public void DropBottle() {
+
+        float Distance = Vector3.Distance(bottle.transform.position, binRecycle.transform.position);
+        if (Distance < 50) {
+            bottle.transform.position = binRecycle.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            bottle.transform.position = bottleInitialPos;
         }
     
     }
