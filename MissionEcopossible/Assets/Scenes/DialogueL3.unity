@@ -884,9 +884,9 @@ MonoBehaviour:
     afford to move again\u2026What should we do?"
   - "Dede: Let\u2019s use the submarine again! "
   typingSpeed: 0.07
-  scenename: 
-  finishButton: {fileID: 0}
-  finalPanel: {fileID: 0}
+  scenename: DialogueL3
+  finishButton: {fileID: 465942878}
+  finalPanel: {fileID: 758114916}
   continueButton: {fileID: 1423764017}
   source: {fileID: 16344855}
 --- !u!1 &695759041
