@@ -155,7 +155,7 @@ public class SortingManager : MonoBehaviour
     public void DropMagazine() {
 
         float Distance = Vector3.Distance(magazine.transform.position, binRecycle.transform.position);
-        if (Distance < 50) {
+        if (Distance < 100) {
             magazine.transform.position = binRecycle.transform.position;
         }
         else {
