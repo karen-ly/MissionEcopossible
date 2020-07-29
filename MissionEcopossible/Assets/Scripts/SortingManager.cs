@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SortingManager : MonoBehaviour
 {
+
+    
+    public GameObject apple, binHarmful, binRecycle, binLandfill, binCompost; // Garbage and bin items
+
     // Start is called before the first frame update
     void Start()
     {
