@@ -66,8 +66,8 @@ public class Dialogue : MonoBehaviour
                 textDisplay.text = "Congrats, you've completed this level!";
                 finishButton.SetActive(true);
             }
-            // special case: level 5 (end of chapter 1) -> show message about future levels
-            else if (scenename == "DialogueL5")
+            // levels 2 - 5 -> pop up panel to submarine game (but sorting game for level 5)
+            else
             {
                 continueButton.SetActive(false);
                 finalPanel.SetActive(true);
