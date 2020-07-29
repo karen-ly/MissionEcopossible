@@ -6,11 +6,13 @@ public class SortingManager : MonoBehaviour
 {
 
     
-    public GameObject apple, banana, bottle, 
+    public GameObject apple, banana, bottle, glassbottle, ink,
+    lightbulb, magazine,
     binHarmful, binRecycle, binLandfill, binCompost; // Garbage and bin items
 
 
-    Vector2 appleInitialPos, bananaInitialPos, bottleInitialPos, 
+    Vector2 appleInitialPos, bananaInitialPos, bottleInitialPos, glassbottleInitialPos, 
+    inkInitialPos, lightbulbInitialPos, magazineInitialPos,
     binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
     
     // Start is called before the first frame update
@@ -20,6 +22,10 @@ public class SortingManager : MonoBehaviour
         appleInitialPos = apple.transform.position;
         bananaInitialPos = banana.transform.position;
         bottleInitialPos = bottle.transform.position;
+        glassbottleInitialPos = glassbottle.transform.position;
+        inkInitialPos = ink.transform.position;
+        lightbulbInitialPos = lightbulb.transform.position;
+        magazineInitialPos = magazine.transform.position;
 
         //Position of trash bins
         binHarmfulInitialPos = binHarmful.transform.position;
@@ -48,11 +54,29 @@ public class SortingManager : MonoBehaviour
 
     }
 
-    // public void DragApple() {
+    public void DragGlassottle() {
 
-    //     apple.transform.position = Input.mousePosition;
+        glassbottle.transform.position = Input.mousePosition;
 
-    // }
+    }
+
+    public void DragInk() {
+
+        ink.transform.position = Input.mousePosition;
+
+    }
+
+    public void DragLightbulb() {
+
+        lightbulb.transform.position = Input.mousePosition;
+
+    }
+
+    public void DragMagazine() {
+
+        magazine.transform.position = Input.mousePosition;
+
+    }
     
     public void DropApple() {
 
@@ -89,6 +113,58 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             bottle.transform.position = bottleInitialPos;
+        }
+    
+    }
+
+    public void DropGlassbottle() {
+
+        float Distance = Vector3.Distance(glassbottle.transform.position, binRecycle.transform.position);
+        if (Distance < 50) {
+            glassbottle.transform.position = binRecycle.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            glassbottle.transform.position = glassbottleInitialPos;
+        }
+    
+    }
+
+    public void DropInk() {
+
+        float Distance = Vector3.Distance(ink.transform.position, binRecycle.transform.position);
+        if (Distance < 50) {
+            ink.transform.position = binRecycle.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            ink.transform.position = inkInitialPos;
+        }
+    
+    }
+
+    public void DropLightbulb() {
+
+        float Distance = Vector3.Distance(lightbulb.transform.position, binHarmful.transform.position);
+        if (Distance < 50) {
+            lightbulb.transform.position = binHarmful.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            lightbulb.transform.position = lightbulbInitialPos;
+        }
+    
+    }
+
+    public void DropMagazine() {
+
+        float Distance = Vector3.Distance(magazine.transform.position, binRecycle.transform.position);
+        if (Distance < 50) {
+            magazine.transform.position = binRecycle.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            magazine.transform.position = magazineInitialPos;
         }
     
     }
