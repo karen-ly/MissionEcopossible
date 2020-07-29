@@ -69,10 +69,10 @@ public class Dialogue : MonoBehaviour
             // special case: level 5 (end of chapter 1) -> show message about future levels
             else if (scenename == "DialogueL5")
             {
+                continueButton.SetActive(false);
                 finalPanel.SetActive(true);
                 finishButton.SetActive(true);
             }
-            continueButton.SetActive(false);
         }
     }
 
