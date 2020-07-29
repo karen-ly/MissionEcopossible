@@ -6,14 +6,10 @@ public class SortingManager : MonoBehaviour
 {
 
     
-    public GameObject apple, banana, bottle, glassbottle, ink,
-    lightbulb, magazine,
-    binHarmful, binRecycle, binLandfill, binCompost; // Garbage and bin items
+    public GameObject apple, banana, bottle, glassbottle, ink, lightbulb, magazine, binHarmful, binRecycle, binLandfill, binCompost; // Garbage and bin items
 
 
-    Vector2 appleInitialPos, bananaInitialPos, bottleInitialPos, glassbottleInitialPos, 
-    inkInitialPos, lightbulbInitialPos, magazineInitialPos,
-    binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
+    Vector2 appleInitialPos, bananaInitialPos, bottleInitialPos, glassbottleInitialPos, inkInitialPos, lightbulbInitialPos, magazineInitialPos, binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
     
     // Start is called before the first frame update
     void Start()
