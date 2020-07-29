@@ -40,7 +40,7 @@ public class FinishPopUpController : MonoBehaviour
     }
 
     IEnumerator waiter(){
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.5f);
 
         continueText.text = "Tap to Continue";
 
