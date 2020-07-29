@@ -19,7 +19,7 @@ public class Dialogue : MonoBehaviour
     // newly added code
     public string scenename;
     public GameObject finishButton;
-
+    public GameObject finalPanel;
     public GameObject continueButton;
     public AudioSource source;
 
@@ -67,6 +67,11 @@ public class Dialogue : MonoBehaviour
                 finishButton.SetActive(true);
             }
             // special case: level 5 (end of chapter 1) -> show message about future levels
+            else if (scenename == "DialogueL5")
+            {
+                finalPanel.SetActive(true);
+                finishButton.SetActive(true);
+            }
             continueButton.SetActive(false);
         }
     }
