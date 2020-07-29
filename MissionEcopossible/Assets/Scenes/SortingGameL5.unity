@@ -1627,6 +1627,7 @@ GameObject:
   - component: {fileID: 654319916}
   - component: {fileID: 654319918}
   - component: {fileID: 654319919}
+  - component: {fileID: 654319920}
   m_Layer: 5
   m_Name: banana
   m_TagString: Untagged
@@ -1746,6 +1747,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &654319920
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654319914}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &853323207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,6 +1928,7 @@ GameObject:
   - component: {fileID: 940878417}
   - component: {fileID: 940878419}
   - component: {fileID: 940878420}
+  - component: {fileID: 940878421}
   m_Layer: 5
   m_Name: lightbulb
   m_TagString: Untagged
@@ -1938,9 +1952,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -242.40594, y: 174.5365}
-  m_SizeDelta: {x: 120, y: 150}
-  m_Pivot: {x: 0.47161853, y: 0.56357664}
+  m_AnchoredPosition: {x: -239.00046, y: 165}
+  m_SizeDelta: {x: 140, y: 180}
+  m_Pivot: {x: 0.5000001, y: 0.5}
 --- !u!114 &940878417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,6 +2048,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &940878421
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940878415}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &942917371
 GameObject:
   m_ObjectHideFlags: 0
@@ -2567,6 +2593,7 @@ GameObject:
   - component: {fileID: 1576240650}
   - component: {fileID: 1576240652}
   - component: {fileID: 1576240653}
+  - component: {fileID: 1576240654}
   m_Layer: 5
   m_Name: bottle
   m_TagString: Untagged
@@ -2686,6 +2713,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &1576240654
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576240648}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1620301360
 GameObject:
   m_ObjectHideFlags: 0
@@ -3040,6 +3079,7 @@ GameObject:
   - component: {fileID: 2106637392}
   - component: {fileID: 2106637394}
   - component: {fileID: 2106637395}
+  - component: {fileID: 2106637396}
   m_Layer: 5
   m_Name: magazine
   m_TagString: Untagged
@@ -3159,6 +3199,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &2106637396
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106637390}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2110259343
 GameObject:
   m_ObjectHideFlags: 0
@@ -3172,6 +3224,7 @@ GameObject:
   - component: {fileID: 2110259345}
   - component: {fileID: 2110259347}
   - component: {fileID: 2110259348}
+  - component: {fileID: 2110259349}
   m_Layer: 5
   m_Name: ink
   m_TagString: Untagged
@@ -3291,6 +3344,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!225 &2110259349
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110259343}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2113249760
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,6 +3369,7 @@ GameObject:
   - component: {fileID: 2113249762}
   - component: {fileID: 2113249765}
   - component: {fileID: 2113249764}
+  - component: {fileID: 2113249766}
   m_Layer: 5
   m_Name: glassbottle
   m_TagString: Untagged
@@ -3423,3 +3489,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1908879176}
+--- !u!225 &2113249766
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113249760}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
