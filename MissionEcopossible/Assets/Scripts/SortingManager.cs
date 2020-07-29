@@ -54,7 +54,7 @@ public class SortingManager : MonoBehaviour
 
     }
 
-    public void DragGlassottle() {
+    public void DragGlassbottle() {
 
         glassbottle.transform.position = Input.mousePosition;
 

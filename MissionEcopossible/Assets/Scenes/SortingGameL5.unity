@@ -1606,6 +1606,10 @@ MonoBehaviour:
   apple: {fileID: 312775145}
   banana: {fileID: 654319914}
   bottle: {fileID: 0}
+  glassbottle: {fileID: 0}
+  ink: {fileID: 0}
+  lightbulb: {fileID: 0}
+  magazine: {fileID: 0}
   binHarmful: {fileID: 187951034}
   binRecycle: {fileID: 2013962543}
   binLandfill: {fileID: 1086247563}
@@ -3206,12 +3210,12 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 643926843}
-          m_MethodName: 
+        - m_Target: {fileID: 643926845}
+          m_MethodName: DragGlassottle
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3221,12 +3225,12 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 643926843}
-          m_MethodName: 
+        - m_Target: {fileID: 643926845}
+          m_MethodName: DropGlassbottle
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
