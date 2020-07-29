@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DialogueL5.unity
     guid: c499946515d76b343b4744135bec86dc
   - enabled: 0
-    path: Assets/Scenes/SortingGame.unity
+    path: 
     guid: 6d1a00c13ea7f4e32b1dd6113cefcd06
+  - enabled: 1
+    path: Assets/Scenes/SortingGameL5.unity
+    guid: ad44e0b33b8fc6b44b446c9ba96efcd2
   m_configObjects: {}
