@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Trash : MonoBehaviour
 {
     public trashItemPopUpController popUp;
+    public FinishPopUpController finishPopUp;
     public GameObject claw;
     public GameObject[] trashItems;
     public Vector2[] trashPositions;
@@ -36,6 +37,9 @@ public class Trash : MonoBehaviour
     void Update()
     {
         ClawPickup();
+        if(trashCount == trashItems.Length){
+            finishPopUp.Display();
+        }
     }
 
     // Picks up current trash item if collides with claw; shows trash info
