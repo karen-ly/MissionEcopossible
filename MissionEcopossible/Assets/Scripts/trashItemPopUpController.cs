@@ -15,6 +15,7 @@ public class trashItemPopUpController : MonoBehaviour
     public static bool isDisplayed;
     public int displayedItemIndex;
     public Submarine subControlScript; // script for submarine controls
+    public int numShown = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,7 @@ public class trashItemPopUpController : MonoBehaviour
             foreach(Touch touch in Input.touches){
                 if(touch.phase == TouchPhase.Began){
                     Close();
+                    numShown++;
                 }
             }
         }
@@ -91,5 +93,9 @@ public class trashItemPopUpController : MonoBehaviour
         trashItemImages[displayedItemIndex].SetActive(false);
         Time.timeScale = 1f; // Unfreezes game
         isDisplayed = false;
+    }
+
+    public bool LastPopUpClosed(){
+        return (numShown==10);
     }
 }

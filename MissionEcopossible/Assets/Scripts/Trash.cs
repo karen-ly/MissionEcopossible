@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class Trash : MonoBehaviour
 {
     public trashItemPopUpController popUp;
+    public SubGameSounds subGameSoundsScript;
     public FinishPopUpController finishPopUp;
     public GameObject claw;
     public GameObject[] trashItems;
     public Vector2[] trashPositions;
     public int trashCount;
+    public bool finishPopUpCalled = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,8 +39,10 @@ public class Trash : MonoBehaviour
     void Update()
     {
         ClawPickup();
-        if(trashCount == trashItems.Length){
+        //finishPopUpCalled is to ensure the below if is only called once
+        if(trashCount == trashItems.Length && !finishPopUpCalled && popUp.LastPopUpClosed()){
             finishPopUp.Display();
+            finishPopUpCalled = true;
         }
     }
 
@@ -48,6 +52,7 @@ public class Trash : MonoBehaviour
             // Chack if bounds of the claw and trashItam colliders overlap
             if(trashItems[trashCount].GetComponent<ClawCollide>().IsPickedUp()){
                 // TODO: add sound effect
+                subGameSoundsScript.PlayPickUp();
 
                 // Move trashItem out of frame
                 trashItems[trashCount].transform.position = new Vector2(0, -6);
@@ -62,7 +67,4 @@ public class Trash : MonoBehaviour
             }
         }
     }
-
-    // TODO: text when you finish game
-    // TODO: instructions for submarine game before it starts
 }

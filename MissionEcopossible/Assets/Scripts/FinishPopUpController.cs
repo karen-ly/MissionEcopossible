@@ -11,6 +11,7 @@ public class FinishPopUpController : MonoBehaviour
     public static bool isDisplayed = false;
     public Submarine subControlScript; // script for submarine controls
     public bool waitDone;
+    public SubGameSounds subGameSoundsScript;
 
     // Start is called before the first frame update
     void Start(){
@@ -36,10 +37,12 @@ public class FinishPopUpController : MonoBehaviour
     public void Display(){
         subControlScript.Pause();
         finishPopUpUI.SetActive(true);
+        subGameSoundsScript.PlayLevelDone();
         StartCoroutine(waiter());
     }
 
     IEnumerator waiter(){
+
         yield return new WaitForSeconds(1.5f);
 
         continueText.text = "Tap to Continue";
