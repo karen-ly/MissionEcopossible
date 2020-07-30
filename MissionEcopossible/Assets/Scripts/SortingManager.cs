@@ -7,14 +7,14 @@ public class SortingManager : MonoBehaviour
 
     // Garbage and bin items
     public GameObject apple, banana, bottle, glassbottle, ink, lightbulb, magazine, milk, battery, 
-    pizzabox, snackbag, straw, styrofoam, 
+    pizzabox, snackbag, straw, styrofoam, teabag, napkin,
     binHarmful, binRecycle, binLandfill, binCompost; 
 
 
     // Garbage and bin positions
     Vector2 appleInitialPos, bananaInitialPos, bottleInitialPos, glassbottleInitialPos, inkInitialPos, 
     lightbulbInitialPos, magazineInitialPos, milkInitialPos, batteryInitialPos, pizzaboxInitialPos,
-    snackbagInitialPos, strawInitialPos, styrofoamInitialPos,
+    snackbagInitialPos, strawInitialPos, styrofoamInitialPos, teabagInitialPos, napkinInitialPos,
     binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
     
     // Start is called before the first frame update
@@ -34,6 +34,8 @@ public class SortingManager : MonoBehaviour
         snackbagInitialPos = snackbag.transform.position;
         strawInitialPos = straw.transform.position;
         styrofoamInitialPos = styrofoam.transform.position;
+        teabagInitialPos = teabag.transform.position;
+        napkinInitialPos = napkin.transform.position;
 
         //Position of trash bins
         binHarmfulInitialPos = binHarmful.transform.position;
@@ -122,6 +124,18 @@ public class SortingManager : MonoBehaviour
     public void DragStyrofoam() {
 
         styrofoam.transform.position = Input.mousePosition;
+
+    }
+
+    public void DragTeabag() {
+
+        teabag.transform.position = Input.mousePosition;
+
+    }
+
+    public void DragNapkin() {
+
+        napkin.transform.position = Input.mousePosition;
 
     }
     
@@ -293,6 +307,32 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             styrofoam.transform.position = styrofoamInitialPos;
+        }
+    
+    }
+
+    public void DropTeabag() {
+
+        float Distance = Vector3.Distance(teabag.transform.position, binCompost.transform.position);
+        if (Distance < 100) {
+            teabag.transform.position = binCompost.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            teabag.transform.position = teabagInitialPos;
+        }
+    
+    }
+
+    public void DropNapkin() {
+
+        float Distance = Vector3.Distance(napkin.transform.position, binCompost.transform.position);
+        if (Distance < 100) {
+            napkin.transform.position = binCompost.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            napkin.transform.position = napkinInitialPos;
         }
     
     }
