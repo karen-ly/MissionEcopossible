@@ -14,7 +14,6 @@ public class InstructionsPopUpController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
-        Time.timeScale = 0f; // Freezes sub 
         instructions = new string[] {"Help Dede and Cece collect trash with the submarine!", "Tap and hold down to extend the submarine claw", "Touch items with the claw to collect them", "Remember the name and category of each item", "Now, to the game!"};
         instructionsPopUpUI = GameObject.Find("InstructionsPanel");
         instructText = GameObject.Find("InstructText").GetComponent<Text>();
