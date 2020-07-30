@@ -4885,6 +4885,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: BgSubmarine
       objectReference: {fileID: 0}
+    - target: {fileID: 7064950345390812091, guid: 0afacc4352a5b4e43a43036f6211a92f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -400.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064950345390812091, guid: 0afacc4352a5b4e43a43036f6211a92f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 758.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064950345390812091, guid: 0afacc4352a5b4e43a43036f6211a92f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 101.08653
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064950345390812091, guid: 0afacc4352a5b4e43a43036f6211a92f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 120.39752
+      objectReference: {fileID: 0}
     - target: {fileID: 7158828246162452738, guid: 0afacc4352a5b4e43a43036f6211a92f,
         type: 3}
       propertyPath: m_textInfo.characterCount
