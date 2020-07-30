@@ -5,14 +5,16 @@ using UnityEngine;
 public class SortingManager : MonoBehaviour
 {
 
-    
+    // Garbage and bin items
     public GameObject apple, banana, bottle, glassbottle, ink, lightbulb, magazine, milk, battery, 
-    pizzabox,
-    binHarmful, binRecycle, binLandfill, binCompost; // Garbage and bin items
+    pizzabox, snackbag, straw, styrofoam, 
+    binHarmful, binRecycle, binLandfill, binCompost; 
 
 
+    // Garbage and bin positions
     Vector2 appleInitialPos, bananaInitialPos, bottleInitialPos, glassbottleInitialPos, inkInitialPos, 
     lightbulbInitialPos, magazineInitialPos, milkInitialPos, batteryInitialPos, pizzaboxInitialPos,
+    snackbagInitialPos, strawInitialPos, styrofoamInitialPos,
     binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
     
     // Start is called before the first frame update
@@ -29,6 +31,9 @@ public class SortingManager : MonoBehaviour
         milkInitialPos = milk.transform.position;
         batteryInitialPos = battery.transform.position;
         pizzaboxInitialPos = pizzabox.transform.position;
+        snackbagInitialPos = snackbag.transform.position;
+        strawInitialPos = straw.transform.position;
+        styrofoamInitialPos = styrofoam.transform.position;
 
         //Position of trash bins
         binHarmfulInitialPos = binHarmful.transform.position;
@@ -99,6 +104,24 @@ public class SortingManager : MonoBehaviour
     public void DragPizzabox() {
 
         pizzabox.transform.position = Input.mousePosition;
+
+    }
+
+    public void DragSnackbag() {
+
+        snackbag.transform.position = Input.mousePosition;
+
+    }
+
+    public void DragStraw() {
+
+        straw.transform.position = Input.mousePosition;
+
+    }
+
+    public void DragStyrofoam() {
+
+        styrofoam.transform.position = Input.mousePosition;
 
     }
     
@@ -231,6 +254,45 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             pizzabox.transform.position = pizzaboxInitialPos;
+        }
+    
+    }
+
+    public void DropSnackbag() {
+
+        float Distance = Vector3.Distance(snackbag.transform.position, binLandfill.transform.position);
+        if (Distance < 100) {
+            snackbag.transform.position = binLandfill.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            snackbag.transform.position = snackbagInitialPos;
+        }
+    
+    }
+
+    public void DropStraw() {
+
+        float Distance = Vector3.Distance(straw.transform.position, binLandfill.transform.position);
+        if (Distance < 100) {
+            straw.transform.position = binLandfill.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            straw.transform.position = strawInitialPos;
+        }
+    
+    }
+
+    public void DropStyrofoam() {
+
+        float Distance = Vector3.Distance(styrofoam.transform.position, binLandfill.transform.position);
+        if (Distance < 100) {
+            styrofoam.transform.position = binLandfill.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            styrofoam.transform.position = styrofoamInitialPos;
         }
     
     }
