@@ -7,11 +7,12 @@ public class SortingManager : MonoBehaviour
 
     
     public GameObject apple, banana, bottle, glassbottle, ink, lightbulb, magazine, milk, battery, 
+    pizzabox,
     binHarmful, binRecycle, binLandfill, binCompost; // Garbage and bin items
 
 
     Vector2 appleInitialPos, bananaInitialPos, bottleInitialPos, glassbottleInitialPos, inkInitialPos, 
-    lightbulbInitialPos, magazineInitialPos, milkInitialPos, batteryInitialPos, 
+    lightbulbInitialPos, magazineInitialPos, milkInitialPos, batteryInitialPos, pizzaboxInitialPos,
     binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
     
     // Start is called before the first frame update
@@ -27,6 +28,7 @@ public class SortingManager : MonoBehaviour
         magazineInitialPos = magazine.transform.position;
         milkInitialPos = milk.transform.position;
         batteryInitialPos = battery.transform.position;
+        pizzaboxInitialPos = pizzabox.transform.position;
 
         //Position of trash bins
         binHarmfulInitialPos = binHarmful.transform.position;
@@ -37,6 +39,9 @@ public class SortingManager : MonoBehaviour
     }
 
 
+    /**
+      * Drag item method groups.
+      */ 
     public void DragApple() {
 
         apple.transform.position = Input.mousePosition;
@@ -90,7 +95,16 @@ public class SortingManager : MonoBehaviour
         battery.transform.position = Input.mousePosition;
 
     }
+
+    public void DragPizzabox() {
+
+        pizzabox.transform.position = Input.mousePosition;
+
+    }
     
+    /**
+      * Drop item method groups.
+      */  
     public void DropApple() {
 
         float Distance = Vector3.Distance(apple.transform.position, binCompost.transform.position);
@@ -204,6 +218,19 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             battery.transform.position = batteryInitialPos;
+        }
+    
+    }
+
+    public void DropPizzabox() {
+
+        float Distance = Vector3.Distance(pizzabox.transform.position, binLandfill.transform.position);
+        if (Distance < 100) {
+            pizzabox.transform.position = binLandfill.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            pizzabox.transform.position = pizzaboxInitialPos;
         }
     
     }
