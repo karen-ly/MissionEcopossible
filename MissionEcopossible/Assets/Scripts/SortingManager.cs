@@ -6,10 +6,10 @@ public class SortingManager : MonoBehaviour
 {
 
     
-    public GameObject apple, banana, bottle, glassbottle, ink, lightbulb, magazine, binHarmful, binRecycle, binLandfill, binCompost; // Garbage and bin items
+    public GameObject apple, banana, bottle, glassbottle, ink, lightbulb, magazine, milk, binHarmful, binRecycle, binLandfill, binCompost; // Garbage and bin items
 
 
-    Vector2 appleInitialPos, bananaInitialPos, bottleInitialPos, glassbottleInitialPos, inkInitialPos, lightbulbInitialPos, magazineInitialPos, binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
+    Vector2 appleInitialPos, bananaInitialPos, bottleInitialPos, glassbottleInitialPos, inkInitialPos, lightbulbInitialPos, magazineInitialPos, milkInitialPos, binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
     
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,7 @@ public class SortingManager : MonoBehaviour
         inkInitialPos = ink.transform.position;
         lightbulbInitialPos = lightbulb.transform.position;
         magazineInitialPos = magazine.transform.position;
+        milkInitialPos = milk.transform.position;
 
         //Position of trash bins
         binHarmfulInitialPos = binHarmful.transform.position;
@@ -71,6 +72,12 @@ public class SortingManager : MonoBehaviour
     public void DragMagazine() {
 
         magazine.transform.position = Input.mousePosition;
+
+    }
+
+    public void DragMilk() {
+
+        milk.transform.position = Input.mousePosition;
 
     }
     
@@ -161,6 +168,19 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             magazine.transform.position = magazineInitialPos;
+        }
+    
+    }
+
+    public void DropMilk() {
+
+        float Distance = Vector3.Distance(milk.transform.position, binRecycle.transform.position);
+        if (Distance < 100) {
+            milk.transform.position = binRecycle.transform.position;
+        }
+        else {
+            // If sorting is wrong, do something FIXME
+            milk.transform.position = milkInitialPos;
         }
     
     }
