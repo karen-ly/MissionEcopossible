@@ -886,7 +886,7 @@ MonoBehaviour:
   typingSpeed: 0.07
   scenename: DialogueL3
   finishButton: {fileID: 465942878}
-  finalPanel: {fileID: 758114916}
+  finalPanel: {fileID: 1094578685}
   continueButton: {fileID: 1423764017}
   source: {fileID: 16344855}
 --- !u!1 &695759041
