@@ -15,14 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Settings.unity
     guid: a100357065d9b4f3388854b77418971f
   - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: de6812dd3c8d44987902a75caefc9baa
+  - enabled: 1
     path: Assets/Scenes/Levels.unity
     guid: 655b5c10c84eb4d929f476d1482ab6d5
   - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: c3110b1f217c70c4a8e7b0dbb2114e48
+  - enabled: 1
     path: Assets/Scenes/DialogueL1.unity
     guid: f23b0306971a3434db3e7fa4b219c57e
-  - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: de6812dd3c8d44987902a75caefc9baa
   - enabled: 1
     path: Assets/Scenes/DialogueL1Ctn.unity
     guid: e5d7edf9ace210f40bf59d0a8771301e
