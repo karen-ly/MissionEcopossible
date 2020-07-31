@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SubmarineGameL2.unity
     guid: ef21e9933834545f295b2841fe5cd0d4
+  - enabled: 1
+    path: Assets/Scenes/SubmarineGameL3.unity
+    guid: be1e6fda5adae4fcba8abfd6fad3b00b
+  - enabled: 1
+    path: Assets/Scenes/SubmarineGameL4.unity
+    guid: 8076e3c5007d74bdfb6d9d8a118cb893
   m_configObjects: {}

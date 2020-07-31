@@ -44,7 +44,7 @@ public class InstructionsPopUpController : MonoBehaviour
         instructText.text = instructions[nextDisplayedText];
         continueText.text = "";
 
-        yield return new WaitForSecondsRealtime(1.5f);
+        yield return new WaitForSecondsRealtime(1f);
 
         continueText.text = "Tap to Continue";
 

@@ -28,6 +28,12 @@ public class Trash : MonoBehaviour
             // Array to hold start position of each trash item
             trashPositions = new Vector2[] {new Vector2(0, -1), new Vector2(1, -3), new Vector2(-1.5f, 0.5f), new Vector2(0, -2.5f), new Vector2(1, 1), new Vector2(-1.5f, 0.5f), new Vector2(0, 0), new Vector2(1.8f, 0), new Vector2(-0.5f, -2.5f), new Vector2(-3, -1)};
         }
+        else if(sceneName == "SubmarineGameL3"){
+            trashPositions = new Vector2[] {new Vector2(0, 0), new Vector2(-2, -3), new Vector2(0, -3), new Vector2(-1, -1.5f), new Vector2(1, 0.5f), new Vector2(-1.5f, 0.5f), new Vector2(0.5f, -1.2f), new Vector2(-2, -3), new Vector2(0.5f, 0.6f), new Vector2(1, -3)};
+        }
+        else if(sceneName == "SubmarineGameL4"){
+            trashPositions = new Vector2[] {new Vector2(2, -1), new Vector2(-2, -2), new Vector2(0, -3), new Vector2(0, 0), new Vector2(1.5f, -2), new Vector2(-1.5f, 1f), new Vector2(-2.5f, -1f), new Vector2(0, -1), new Vector2(-1.5f, -3), new Vector2(1.5f, 1)};
+        }
         
         trashCount = 0;
 
