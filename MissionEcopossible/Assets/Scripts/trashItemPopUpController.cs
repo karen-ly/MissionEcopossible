@@ -29,6 +29,10 @@ public class trashItemPopUpController : MonoBehaviour
             itemNames = new string[] {"Apple Core", "Plastic Bottle", "Newspaper", "Pizza Box", "Fish Bone", "Styrofoam", "Cardboard", "Leaf", "Battery", "Glass"};
             itemCategories = new string[] {"Compost", "Recycling", "Recycling", "Landfill", "Compost", "Landfill", "Recycling", "Compost", "Harmful", "Landfill"};
         }
+        else if(sceneName == "SubmarineGameL3"){
+            itemNames = new string[] {"Dirty Napkin", "Flower", "Six Pack Ring Holder", "Pet Waste", "Coffee Grounds", "Glass Bottle", "Straw", "Milk Carton", "Cigarette Butt", "Textbook"};
+            itemCategories = new string[] {"Compost", "Compost", "Harmful", "Landfill", "Compost", "Recycling", "Landfill", "Recycling", "Landfill", "Recycling"};
+        }
 
         // Creating an array of all the trashItemImages
         trashItemImages = new GameObject[] {GameObject.Find("trashItem1Image"),GameObject.Find("trashItem2Image"),GameObject.Find("trashItem3Image"),GameObject.Find("trashItem4Image"),GameObject.Find("trashItem5Image"),GameObject.Find("trashItem6Image"),GameObject.Find("trashItem7Image"),GameObject.Find("trashItem8Image"),GameObject.Find("trashItem9Image"),GameObject.Find("trashItem10Image")};
