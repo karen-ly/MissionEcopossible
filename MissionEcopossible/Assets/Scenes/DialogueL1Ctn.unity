@@ -271,22 +271,27 @@ MonoBehaviour:
   textDisplay: {fileID: 976084283}
   sentences:
   - "Dede: Hi, I\u2019m Dede, a sea turtle who lives on the coast of Florida!"
-  - 'Dede: This is my friend Cece from elementary school, I haven''t seen her since
-    she moved.'
-  - 'Dede: Let me show you around my home!'
-  - 'Cece: Hi! Nice to meet you! '
-  - 'Cece: My family and I just moved away from the north-central Pacific Ocean. '
+  - 'Dede: Let me show you around my home.'
+  - 'Cece: Hey Dede! Nice to see you again!'
+  - 'Dede: Is that Cece? She was my friend in elementary school, but I haven''t seen
+    her since she moved away.'
+  - 'Dede: Hi Cece! What are you doing back here? I thought you moved?'
+  - 'Cece: My family and I just moved back here again from the north-central Pacific
+    Ocean.'
   - 'Cece: There was too much trash floating everywhere to the point that we lost
-    our home.'
-  - "Dede: I\u2019m so sorry\u2026 but I\u2019m happy that you\u2019re here now!"
-  - "Dede: Welcome to my home\u2026 OH NO! What happened?! Why is there so much plastic
-    here!"
-  - "Cece: It\u2019s the garbage troops! We should clean it up before it\u2019s too
-    late! "
-  - "Cece: I don\u2019t want your home to be destroyed like my old one!"
+    our home. '
+  - "Dede: I\u2019m so sorry\u2026 "
+  - "Dede: But I\u2019m happy that you\u2019re here now! "
+  - 'Dede: Want to come with us to my home?'
+  - 'Cece: Sure! Let''s go!'
+  - . . .
+  - "Dede: We are here! Welcome to my home\u2026"
+  - 'Dede: OH NO! What happened?! Why is there so much garbage here! '
+  - "Cece: We should clean it up before it\u2019s too late!  "
+  - "Cece: I don\u2019t want your home to be destroyed like my old one! "
   - "Bebe: Don\u2019t even bother! There\u2019s no point in cleaning up."
   - "Bebe: Let\u2019s just pack up our stuff and go. "
-  - "Dede: This is Shark Bebe, he\u2019s the worst..."
+  - "Dede: This is Bebe Shark, he\u2019s the worst..."
   - "Cece: We have to do something\u2026 anything\u2026 "
   typingSpeed: 0.07
   DedeNormal: {fileID: 0}
