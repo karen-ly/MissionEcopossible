@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 // [System.Serializable]
 public class Dialogue : MonoBehaviour
@@ -12,9 +13,12 @@ public class Dialogue : MonoBehaviour
     // public string[] sentences;
 
     public TextMeshProUGUI textDisplay;
-    public string[] sentences;  //Own class, object contains sentences and characters
-    private int index;
+    public string[] sentences;  
+    private int index = 0;
     public float typingSpeed;
+    public GameObject DedeNormal;
+    public GameObject CeceNormal;
+    public GameObject BebeNormal;
 
     // newly added code
     public string scenename;
@@ -25,9 +29,12 @@ public class Dialogue : MonoBehaviour
 
 
     void Start() {
+        DedeNormal = GameObject.Find("DedeFixed");
+        CeceNormal = GameObject.Find("CeceFixed");
+        BebeNormal = GameObject.Find("BebeFixed");
 
+        DisplayCharacter(sentences[index].Substring(0,4));
         StartCoroutine(Type());
-
     }
 
     void Update() {
@@ -37,9 +44,26 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    public void DisplayCharacter(string name){
+        // make sure no other character is displayed
+        DedeNormal.SetActive(false);
+        CeceNormal.SetActive(false);
+        BebeNormal.SetActive(false);
+
+        // show correct character
+        if(name.Equals("Dede")){
+            DedeNormal.SetActive(true);
+        }
+        else if(name.Equals("Cece")){
+            CeceNormal.SetActive(true);
+        }
+        else if(name.Equals("Bebe")){
+            BebeNormal.SetActive(true);
+        }
+    }
+
 
     IEnumerator Type() {
-
         foreach(char letter in sentences[index].ToCharArray()) {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
@@ -54,9 +78,8 @@ public class Dialogue : MonoBehaviour
         if (index < sentences.Length - 1) {
             index++;
             textDisplay.text = "";
-            StartCoroutine(Type());
-            // Object: sentence string + face type
-            
+            DisplayCharacter(sentences[index].Substring(0,4));
+            StartCoroutine(Type());            
         } 
 
         // reached end of dialogue for scene
