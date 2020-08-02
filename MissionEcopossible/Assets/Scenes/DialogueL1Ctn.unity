@@ -302,6 +302,7 @@ MonoBehaviour:
   finalPanel: {fileID: 0}
   continueButton: {fileID: 412268382}
   source: {fileID: 2037589238}
+  trashscene: {fileID: 1090554084}
 --- !u!4 &232848638
 Transform:
   m_ObjectHideFlags: 0
@@ -1164,7 +1165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1090554085
 RectTransform:
   m_ObjectHideFlags: 0
