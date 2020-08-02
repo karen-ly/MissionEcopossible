@@ -52,6 +52,11 @@ public class Dialogue : MonoBehaviour
         if(textDisplay.text == "Cece: Let’s go!") {
             trashscene.SetActive(true);
         }
+        // level 5 - pile of trash to be sorted
+        if(textDisplay.text == "Dede: Now that we collected all the trash, we should sort it.") {
+            trashscene.SetActive(true);
+        }
+        
 
     }
 
