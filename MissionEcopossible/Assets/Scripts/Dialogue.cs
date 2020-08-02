@@ -26,6 +26,7 @@ public class Dialogue : MonoBehaviour
     public GameObject finalPanel;
     public GameObject continueButton;
     public AudioSource source;
+    public GameObject trashscene;
 
 
     void Start() {
@@ -42,6 +43,12 @@ public class Dialogue : MonoBehaviour
         if(textDisplay.text == sentences[index]) {
             continueButton.SetActive(true);
         }
+        // check if current text is trash scene
+        // level 1 - Dede's house
+        if(textDisplay.text == "Dede: We are here! Welcome to my home…") {
+            trashscene.SetActive(true);        
+        }
+
     }
 
     public void DisplayCharacter(string name){
@@ -61,6 +68,7 @@ public class Dialogue : MonoBehaviour
             BebeNormal.SetActive(true);
         }
     }
+
 
 
     IEnumerator Type() {
