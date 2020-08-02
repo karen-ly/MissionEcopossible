@@ -48,6 +48,10 @@ public class Dialogue : MonoBehaviour
         if(textDisplay.text == "Dede: We are here! Welcome to my home…") {
             trashscene.SetActive(true);        
         }
+        // level 3 - Cece's house
+        if(textDisplay.text == "Cece: Let’s go!") {
+            trashscene.SetActive(true);
+        }
 
     }
 
