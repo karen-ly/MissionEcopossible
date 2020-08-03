@@ -185,7 +185,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(bottle.transform.position, binRecycle.transform.position);
         if (Distance < 50) {
-            bottle.transform.position = binRecycle.transform.position;
+            Destroy(bottle);
+            // bottle.transform.position = binRecycle.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -199,7 +200,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(glassbottle.transform.position, binRecycle.transform.position);
         if (Distance < 50) {
-            glassbottle.transform.position = binRecycle.transform.position;
+            Destroy(glassbottle);
+            // glassbottle.transform.position = binRecycle.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -213,7 +215,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(ink.transform.position, binRecycle.transform.position);
         if (Distance < 50) {
-            ink.transform.position = binRecycle.transform.position;
+            Destroy(ink);
+            // ink.transform.position = binRecycle.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -227,7 +230,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(lightbulb.transform.position, binHarmful.transform.position);
         if (Distance < 50) {
-            lightbulb.transform.position = binHarmful.transform.position;
+            Destroy(lightbulb);
+            // lightbulb.transform.position = binHarmful.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -241,7 +245,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(magazine.transform.position, binRecycle.transform.position);
         if (Distance < 100) {
-            magazine.transform.position = binRecycle.transform.position;
+            Destroy(magazine);
+            // magazine.transform.position = binRecycle.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -255,7 +260,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(milk.transform.position, binRecycle.transform.position);
         if (Distance < 100) {
-            milk.transform.position = binRecycle.transform.position;
+            Destroy(milk);
+            // milk.transform.position = binRecycle.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -269,7 +275,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(battery.transform.position, binHarmful.transform.position);
         if (Distance < 100) {
-            battery.transform.position = binHarmful.transform.position;
+            Destroy(battery);
+            // battery.transform.position = binHarmful.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -283,7 +290,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(pizzabox.transform.position, binLandfill.transform.position);
         if (Distance < 100) {
-            pizzabox.transform.position = binLandfill.transform.position;
+            Destroy(pizzabox);
+            // pizzabox.transform.position = binLandfill.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -297,7 +305,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(snackbag.transform.position, binLandfill.transform.position);
         if (Distance < 100) {
-            snackbag.transform.position = binLandfill.transform.position;
+            Destroy(snackbag);
+            // snackbag.transform.position = binLandfill.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -311,7 +320,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(straw.transform.position, binLandfill.transform.position);
         if (Distance < 100) {
-            straw.transform.position = binLandfill.transform.position;
+            Destroy(straw);
+            // straw.transform.position = binLandfill.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -325,7 +335,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(styrofoam.transform.position, binLandfill.transform.position);
         if (Distance < 100) {
-            styrofoam.transform.position = binLandfill.transform.position;
+            Destroy(styrofoam);
+            // styrofoam.transform.position = binLandfill.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
@@ -339,7 +350,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(teabag.transform.position, binCompost.transform.position);
         if (Distance < 100) {
-            teabag.transform.position = binCompost.transform.position;
+            Destroy(teabag);
+            // teabag.transform.position = binCompost.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
