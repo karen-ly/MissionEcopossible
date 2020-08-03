@@ -170,11 +170,13 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(banana.transform.position, binCompost.transform.position);
         if (Distance < 50) {
-            banana.transform.position = binCompost.transform.position;
+            Destroy(banana);
+            // banana.transform.position = binCompost.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
             banana.transform.position = bananaInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -188,6 +190,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             bottle.transform.position = bottleInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -201,6 +204,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             glassbottle.transform.position = glassbottleInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -214,6 +218,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             ink.transform.position = inkInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -227,6 +232,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             lightbulb.transform.position = lightbulbInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -240,6 +246,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             magazine.transform.position = magazineInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -253,6 +260,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             milk.transform.position = milkInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -266,6 +274,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             battery.transform.position = batteryInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -279,6 +288,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             pizzabox.transform.position = pizzaboxInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -292,6 +302,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             snackbag.transform.position = snackbagInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -305,6 +316,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             straw.transform.position = strawInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -318,6 +330,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             styrofoam.transform.position = styrofoamInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -331,6 +344,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             teabag.transform.position = teabagInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
@@ -344,6 +358,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             napkin.transform.position = napkinInitialPos;
+            wrongInfoBox.SetActive(true);
         }
     
     }
