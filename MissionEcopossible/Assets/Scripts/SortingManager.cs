@@ -154,6 +154,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             apple.transform.position = appleInitialPos;
+            wrongInfo.SetActive(true);
         }
     
     }
