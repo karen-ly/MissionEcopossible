@@ -5,6 +5,8 @@ using UnityEngine;
 public class SortingManager : MonoBehaviour
 {
 
+    public GameObject wrongInfo;
+
     // Garbage and bin items
     public GameObject apple, banana, bottle, glassbottle, ink, lightbulb, magazine, milk, battery, 
     pizzabox, snackbag, straw, styrofoam, teabag, napkin,
