@@ -244,7 +244,7 @@ public class SortingManager : MonoBehaviour
     public void DropMagazine() {
 
         float Distance = Vector3.Distance(magazine.transform.position, binRecycle.transform.position);
-        if (Distance < 100) {
+        if (Distance < 50) {
             Destroy(magazine);
             // magazine.transform.position = binRecycle.transform.position;
         }
@@ -365,7 +365,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(napkin.transform.position, binCompost.transform.position);
         if (Distance < 100) {
-            napkin.transform.position = binCompost.transform.position;
+            Destroy(napkin);
+            // napkin.transform.position = binCompost.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
