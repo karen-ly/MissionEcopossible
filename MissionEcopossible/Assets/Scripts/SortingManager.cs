@@ -5,7 +5,7 @@ using UnityEngine;
 public class SortingManager : MonoBehaviour
 {
 
-    public GameObject wrongInfo;
+    public GameObject wrongInfoBox;
 
     // Garbage and bin items
     public GameObject apple, banana, bottle, glassbottle, ink, lightbulb, magazine, milk, battery, 
@@ -47,6 +47,13 @@ public class SortingManager : MonoBehaviour
 
     }
 
+
+    /**
+      * Close wrong info box.
+      */
+      public void closeWrongInfoBox() {
+          wrongInfoBox.SetActive(false);
+      }
 
     /**
       * Drag item method groups.
@@ -154,7 +161,7 @@ public class SortingManager : MonoBehaviour
         else {
             // If sorting is wrong, do something FIXME
             apple.transform.position = appleInitialPos;
-            wrongInfo.SetActive(true);
+            wrongInfoBox.SetActive(true);
         }
     
     }

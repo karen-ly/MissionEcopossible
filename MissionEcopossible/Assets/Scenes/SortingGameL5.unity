@@ -1545,7 +1545,7 @@ GameObject:
   - component: {fileID: 429307659}
   - component: {fileID: 429307658}
   m_Layer: 5
-  m_Name: Text
+  m_Name: wrongInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1957,7 +1957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e637715ada88d4dbe4fd717e83deb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongInfo: {fileID: 1950992587}
+  wrongInfoBox: {fileID: 0}
   apple: {fileID: 312775145}
   banana: {fileID: 654319914}
   bottle: {fileID: 1576240648}
@@ -4053,7 +4053,7 @@ GameObject:
   - component: {fileID: 1950992590}
   - component: {fileID: 1950992589}
   m_Layer: 5
-  m_Name: wrongInfo
+  m_Name: wrongInfoBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
