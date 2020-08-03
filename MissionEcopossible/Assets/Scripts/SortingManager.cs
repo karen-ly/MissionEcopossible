@@ -146,7 +146,8 @@ public class SortingManager : MonoBehaviour
 
         float Distance = Vector3.Distance(apple.transform.position, binCompost.transform.position);
         if (Distance < 50) {
-            apple.transform.position = binCompost.transform.position;
+            Destroy(apple);
+            // apple.transform.position = binCompost.transform.position;
         }
         else {
             // If sorting is wrong, do something FIXME
