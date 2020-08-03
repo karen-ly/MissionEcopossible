@@ -364,7 +364,7 @@ public class SortingManager : MonoBehaviour
     public void DropNapkin() {
 
         float Distance = Vector3.Distance(napkin.transform.position, binCompost.transform.position);
-        if (Distance < 100) {
+        if (Distance < 50) {
             Destroy(napkin);
             // napkin.transform.position = binCompost.transform.position;
         }
