@@ -57,9 +57,6 @@ public class SortingManager : MonoBehaviour
           wrongInfoBox.SetActive(false);
       }
 
-    public void openFinalPanel() {
-        finalPanel.SetActive(true);
-    }
     
     /**
       * Drag item method groups.
