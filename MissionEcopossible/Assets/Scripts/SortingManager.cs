@@ -20,6 +20,10 @@ public class SortingManager : MonoBehaviour
     snackbagInitialPos, strawInitialPos, styrofoamInitialPos, teabagInitialPos, napkinInitialPos,
     binHarmfulInitialPos, binRecycleInitialPos, binLandfillInitialPos, binCompostInitialPos;
     
+    // ending panel 
+    public GameObject endingpanel;
+    // counter to keep track if all 15 items are sorted properly
+    private int count = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -157,9 +161,10 @@ public class SortingManager : MonoBehaviour
       * Drop item method groups.
       */  
     public void DropApple() {
-
         float Distance = Vector3.Distance(apple.transform.position, binCompost.transform.position);
         if (Distance < 50) {
+            // if correct, increment count
+            count+=1;
             Destroy(apple);
             // apple.transform.position = binCompost.transform.position;
         }
@@ -168,13 +173,18 @@ public class SortingManager : MonoBehaviour
             apple.transform.position = appleInitialPos;
             wrongInfoBox.SetActive(true);
         }
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     
     }
 
     public void DropBanana() {
-
         float Distance = Vector3.Distance(banana.transform.position, binCompost.transform.position);
         if (Distance < 50) {
+            // if correct, increment count
+            count+=1;
             Destroy(banana);
             // banana.transform.position = binCompost.transform.position;
         }
@@ -183,13 +193,18 @@ public class SortingManager : MonoBehaviour
             banana.transform.position = bananaInitialPos;
             wrongInfoBox.SetActive(true);
         }
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     
     }
 
     public void DropBottle() {
-
         float Distance = Vector3.Distance(bottle.transform.position, binRecycle.transform.position);
         if (Distance < 50) {
+            // if correct, increment count
+            count+=1;
             Destroy(bottle);
             // bottle.transform.position = binRecycle.transform.position;
         }
@@ -198,13 +213,18 @@ public class SortingManager : MonoBehaviour
             bottle.transform.position = bottleInitialPos;
             wrongInfoBox.SetActive(true);
         }
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     
     }
 
     public void DropGlassbottle() {
-
         float Distance = Vector3.Distance(glassbottle.transform.position, binRecycle.transform.position);
         if (Distance < 50) {
+            // if correct, increment count
+            count+=1;
             Destroy(glassbottle);
             // glassbottle.transform.position = binRecycle.transform.position;
         }
@@ -213,13 +233,18 @@ public class SortingManager : MonoBehaviour
             glassbottle.transform.position = glassbottleInitialPos;
             wrongInfoBox.SetActive(true);
         }
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     
     }
 
     public void DropInk() {
-
         float Distance = Vector3.Distance(ink.transform.position, binRecycle.transform.position);
         if (Distance < 50) {
+            // if correct, increment count
+            count+=1;
             Destroy(ink);
             // ink.transform.position = binRecycle.transform.position;
         }
@@ -228,13 +253,18 @@ public class SortingManager : MonoBehaviour
             ink.transform.position = inkInitialPos;
             wrongInfoBox.SetActive(true);
         }
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     
     }
 
     public void DropLightbulb() {
-
         float Distance = Vector3.Distance(lightbulb.transform.position, binHarmful.transform.position);
         if (Distance < 50) {
+            // if correct, increment count
+            count+=1;
             Destroy(lightbulb);
             // lightbulb.transform.position = binHarmful.transform.position;
         }
@@ -243,13 +273,18 @@ public class SortingManager : MonoBehaviour
             lightbulb.transform.position = lightbulbInitialPos;
             wrongInfoBox.SetActive(true);
         }
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     
     }
 
     public void DropMagazine() {
-
         float Distance = Vector3.Distance(magazine.transform.position, binRecycle.transform.position);
         if (Distance < 50) {
+            // if correct, increment count
+            count+=1;
             Destroy(magazine);
             // magazine.transform.position = binRecycle.transform.position;
         }
@@ -258,13 +293,17 @@ public class SortingManager : MonoBehaviour
             magazine.transform.position = magazineInitialPos;
             wrongInfoBox.SetActive(true);
         }
-    
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     }
 
     public void DropMilk() {
-
         float Distance = Vector3.Distance(milk.transform.position, binRecycle.transform.position);
         if (Distance < 100) {
+            // if correct, increment count
+            count+=1;
             Destroy(milk);
             // milk.transform.position = binRecycle.transform.position;
         }
@@ -273,13 +312,18 @@ public class SortingManager : MonoBehaviour
             milk.transform.position = milkInitialPos;
             wrongInfoBox.SetActive(true);
         }
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     
     }
 
     public void DropBattery() {
-
         float Distance = Vector3.Distance(battery.transform.position, binHarmful.transform.position);
         if (Distance < 100) {
+            // if correct, increment count
+            count+=1;
             Destroy(battery);
             // battery.transform.position = binHarmful.transform.position;
         }
@@ -288,13 +332,18 @@ public class SortingManager : MonoBehaviour
             battery.transform.position = batteryInitialPos;
             wrongInfoBox.SetActive(true);
         }
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     
     }
 
     public void DropPizzabox() {
-
         float Distance = Vector3.Distance(pizzabox.transform.position, binLandfill.transform.position);
         if (Distance < 100) {
+            // if correct, increment count
+            count+=1;
             Destroy(pizzabox);
             // pizzabox.transform.position = binLandfill.transform.position;
         }
@@ -303,13 +352,18 @@ public class SortingManager : MonoBehaviour
             pizzabox.transform.position = pizzaboxInitialPos;
             wrongInfoBox.SetActive(true);
         }
-    
+                
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     }
 
     public void DropSnackbag() {
-
         float Distance = Vector3.Distance(snackbag.transform.position, binLandfill.transform.position);
         if (Distance < 100) {
+            // if correct, increment count
+            count+=1;
             Destroy(snackbag);
             // snackbag.transform.position = binLandfill.transform.position;
         }
@@ -318,13 +372,17 @@ public class SortingManager : MonoBehaviour
             snackbag.transform.position = snackbagInitialPos;
             wrongInfoBox.SetActive(true);
         }
-    
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     }
 
     public void DropStraw() {
-
         float Distance = Vector3.Distance(straw.transform.position, binLandfill.transform.position);
         if (Distance < 100) {
+            // if correct, increment count
+            count+=1;
             Destroy(straw);
             // straw.transform.position = binLandfill.transform.position;
         }
@@ -333,13 +391,17 @@ public class SortingManager : MonoBehaviour
             straw.transform.position = strawInitialPos;
             wrongInfoBox.SetActive(true);
         }
-    
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     }
 
     public void DropStyrofoam() {
-
         float Distance = Vector3.Distance(styrofoam.transform.position, binLandfill.transform.position);
         if (Distance < 100) {
+            // if correct, increment count
+            count+=1;
             Destroy(styrofoam);
             // styrofoam.transform.position = binLandfill.transform.position;
         }
@@ -348,13 +410,17 @@ public class SortingManager : MonoBehaviour
             styrofoam.transform.position = styrofoamInitialPos;
             wrongInfoBox.SetActive(true);
         }
-    
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     }
 
     public void DropTeabag() {
-
         float Distance = Vector3.Distance(teabag.transform.position, binCompost.transform.position);
         if (Distance < 100) {
+            // if correct, increment count
+            count+=1;
             Destroy(teabag);
             // teabag.transform.position = binCompost.transform.position;
         }
@@ -363,13 +429,17 @@ public class SortingManager : MonoBehaviour
             teabag.transform.position = teabagInitialPos;
             wrongInfoBox.SetActive(true);
         }
-    
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
+        }
     }
 
     public void DropNapkin() {
-
         float Distance = Vector3.Distance(napkin.transform.position, binCompost.transform.position);
         if (Distance < 50) {
+            // if correct, increment count
+            count+=1;
             Destroy(napkin);
             // napkin.transform.position = binCompost.transform.position;
         }
@@ -377,6 +447,10 @@ public class SortingManager : MonoBehaviour
             // If sorting is wrong, do something FIXME
             napkin.transform.position = napkinInitialPos;
             wrongInfoBox.SetActive(true);
+        }
+        // check if user has sorted all 15 items, if so end game with pop up panel
+        if (count == 14) {
+            endingpanel.SetActive(true);
         }
     
     }
