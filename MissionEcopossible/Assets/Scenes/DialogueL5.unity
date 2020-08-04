@@ -3574,7 +3574,7 @@ MonoBehaviour:
   - 'Dede: Now that we collected all the trash, we should sort it.'
   - 'Cece: Yeah, let''s sort the trash and take it back to land. '
   - "Dede: Let\u2019s do it!"
-  typingSpeed: 0.07
+  typingSpeed: 0.02
   DedeNormal: {fileID: 0}
   CeceNormal: {fileID: 0}
   BebeNormal: {fileID: 0}

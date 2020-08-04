@@ -1024,7 +1024,7 @@ MonoBehaviour:
   - "Cece: Wait...OH NO! The plastic spread into my new home. My family can\u2019t
     afford to move again\u2026What should we do?"
   - "Dede: Let\u2019s use the submarine again! "
-  typingSpeed: 0.07
+  typingSpeed: 0.02
   DedeNormal: {fileID: 0}
   CeceNormal: {fileID: 0}
   BebeNormal: {fileID: 0}
