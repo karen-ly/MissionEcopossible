@@ -1602,7 +1602,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You are wrong, think what we learn in the submarien...
+  m_Text: You are wrong, think what we learn in the submarine...
 --- !u!222 &429307659
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1958,6 +1958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wrongInfoBox: {fileID: 1950992587}
+  finalPanel: {fileID: 0}
   apple: {fileID: 312775145}
   banana: {fileID: 654319914}
   bottle: {fileID: 1576240648}

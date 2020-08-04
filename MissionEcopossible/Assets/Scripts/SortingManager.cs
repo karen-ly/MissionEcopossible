@@ -6,6 +6,7 @@ public class SortingManager : MonoBehaviour
 {
 
     public GameObject wrongInfoBox;
+    public GameObject finalPanel;
 
     // Garbage and bin items
     public GameObject apple, banana, bottle, glassbottle, ink, lightbulb, magazine, milk, battery, 
@@ -59,6 +60,10 @@ public class SortingManager : MonoBehaviour
           wrongInfoBox.SetActive(false);
       }
 
+    public void openFinalPanel() {
+        finalPanel.SetActive(true);
+    }
+    
     /**
       * Drag item method groups.
       */ 
