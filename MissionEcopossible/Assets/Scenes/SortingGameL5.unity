@@ -1813,7 +1813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Awesome job! You've finished Chapter 1! \n\nMore chapters coming soon!"
+  m_text: "Awesome job! You've completed Chapter 1! \n\nMore chapters coming soon!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50a10deff60d4454eae17950693cecbe, type: 2}
   m_sharedMaterial: {fileID: 3090066607061297460, guid: 50a10deff60d4454eae17950693cecbe,
@@ -1958,7 +1958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wrongInfoBox: {fileID: 1950992587}
-  finalPanel: {fileID: 0}
+  finalPanel: {fileID: 954122137}
   apple: {fileID: 312775145}
   banana: {fileID: 654319914}
   bottle: {fileID: 1576240648}
