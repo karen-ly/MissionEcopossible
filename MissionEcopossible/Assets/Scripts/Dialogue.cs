@@ -109,6 +109,7 @@ public class Dialogue : MonoBehaviour
             // levels 2 - 5 -> pop up panel to submarine game (but sorting game for level 5)
             else
             {
+                DisplayCharacter("none");
                 continueButton.SetActive(false);
                 finalPanel.SetActive(true);
                 finishButton.SetActive(true);
