@@ -46,13 +46,13 @@ public class Dialogue : MonoBehaviour
         CeceScared = GameObject.Find("CeceScared");
         BebeScared = GameObject.Find("BebeScared");
 
-        DisplayCharacter(sentences[index].Substring(0,4));
+        DisplayCharacter(sentences[index].Substring(0,5));
         StartCoroutine(Type());
     }
 
     void Update() {
         
-        if(textDisplay.text == sentences[index]) {
+        if(textDisplay.text == sentences[index].Substring(1)) {
             continueButton.SetActive(true);
         }
         // check if current text is trash scene
@@ -85,21 +85,40 @@ public class Dialogue : MonoBehaviour
         BebeScared.SetActive(false);
 
         // show correct character
-        if(name.Equals("Dede")){
+        if(name.Equals("NDede")){
             DedeNormal.SetActive(true);
         }
-        else if(name.Equals("Cece")){
+        else if(name.Equals("SDede")){
+            DedeScared.SetActive(true);
+        }
+        else if(name.Equals("HDede")){
+            DedeHappy.SetActive(true);
+        }
+        else if(name.Equals("ADede")){
+            DedeAngry.SetActive(true);
+        }
+        else if(name.Equals("DDede")){
+            DedeSad.SetActive(true);
+        }
+        else if(name.Equals("NCece")){
             CeceNormal.SetActive(true);
         }
-        else if(name.Equals("Bebe")){
+        else if(name.Equals("SCece")){
+            CeceScared.SetActive(true);
+        }
+        else if(name.Equals("NBebe")){
             BebeNormal.SetActive(true);
+        }
+        else if(name.Equals("SBebe")){
+            BebeScared.SetActive(true);
         }
     }
 
 
 
     IEnumerator Type() {
-        foreach(char letter in sentences[index].ToCharArray()) {
+        // ensuring the first letter that contains the character expression isn't typed
+        foreach(char letter in sentences[index].Substring(1).ToCharArray()) {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
@@ -113,7 +132,7 @@ public class Dialogue : MonoBehaviour
         if (index < sentences.Length - 1) {
             index++;
             textDisplay.text = "";
-            DisplayCharacter(sentences[index].Substring(0,4));
+            DisplayCharacter(sentences[index].Substring(0,5));
             StartCoroutine(Type());            
         } 
 
