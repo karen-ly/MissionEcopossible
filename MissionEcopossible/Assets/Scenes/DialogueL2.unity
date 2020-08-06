@@ -258,7 +258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -48.354004}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -166, y: 156}
+  m_AnchoredPosition: {x: -350, y: 156}
   m_SizeDelta: {x: 248.24464, y: 250.35071}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &112174356
@@ -2236,38 +2236,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 899277627}
   sentences:
-  - 'Dede: I have an idea! We can use a submarine to clean up around here! '
-  - "Cece: That\u2019s amazing! I want to help. "
-  - 'Dede: Great. Bebe, you should come with us to help! '
-  - 'Bebe: No way! Picking up trash is boring. '
-  - "Bebe: The trash will come back again. And this isn\u2019t even my home!"
-  - 'Cece: But we have to do something about it! I think we should collect it.'
-  - 'Dede: What are we going to do once we collect all the trash?'
-  - 'Cece: I learned how to sort trash back at home, so I can help with that. '
-  - "Cece: The reason why a lot of trash ends up in the ocean is because humans don\u2019t
-    properly sort it. "
-  - 'Cece: Some humans just dump trash on the beach, thinking that it will magically
+  - 'NDede: I have an idea! We can use a submarine to clean up around here! '
+  - "NCece: That\u2019s amazing! I want to help. "
+  - 'NDede: Great. Bebe, you should come with us to help! '
+  - 'NBebe: No way! Picking up trash is boring. '
+  - "NBebe: The trash will come back again. And this isn\u2019t even my home!"
+  - 'NCece: But we have to do something about it! I think we should collect it.'
+  - 'NDede: What are we going to do once we collect all the trash?'
+  - 'NCece: I learned how to sort trash back at home, so I can help with that. '
+  - "NCece: The reason why a lot of trash ends up in the ocean is because humans
+    don\u2019t properly sort it. "
+  - 'NCece: Some humans just dump trash on the beach, thinking that it will magically
     disappear.'
-  - 'Cece: But it ends up in our homes and even our bodies.'
-  - "Dede: That\u2019s horrible! I never knew that was how trash ended up here. How
-    do we sort the trash?"
-  - 'Cece: Well, there are four main categories: recyclables, compost, landfill,
+  - 'NCece: But it ends up in our homes and even our bodies.'
+  - "ADede: That\u2019s horrible! I never knew that was how trash ended up here.
+    How do we sort the trash?"
+  - 'NCece: Well, there are four main categories: recyclables, compost, landfill,
     and harmful ones.'
-  - 'Cece: Once we collect all the trash, we need to sort it into the different categories
-    so that we can properly dispose them. '
-  - 'Cece: Items in the recyclable category can be re-made into new items!'
-  - 'Cece: Items in the compost category are used to make compost, which gives nutrients
+  - 'NCece: Once we collect all the trash, we need to sort it into the different
+    categories so that we can properly dispose them. '
+  - 'NCece: Items in the recyclable category can be re-made into new items!'
+  - 'NCece: Items in the compost category are used to make compost, which gives nutrients
     to soil and plants. '
-  - 'Cece: Unfortunately, items that belong in the landfill category are harder to
-    break down and sometimes even impossible. '
-  - 'Cece: Items in the harmful category require more careful attention depending
+  - 'NCece: Unfortunately, items that belong in the landfill category are harder
+    to break down and sometimes even impossible. '
+  - 'NCece: Items in the harmful category require more careful attention depending
     on the item.'
-  - 'Dede: Wow, I learned a lot!'
-  - "Cece: Come on you two! Let\u2019s use the submarine! "
+  - 'NDede: Wow, I learned a lot!'
+  - "NCece: Come on you two! Let\u2019s use the submarine! "
   typingSpeed: 0.02
   DedeNormal: {fileID: 0}
   CeceNormal: {fileID: 0}
   BebeNormal: {fileID: 0}
+  DedeScared: {fileID: 0}
+  DedeHappy: {fileID: 0}
+  DedeAngry: {fileID: 0}
+  DedeSad: {fileID: 0}
+  CeceScared: {fileID: 0}
+  BebeScared: {fileID: 0}
   scenename: DialogueL2
   finishButton: {fileID: 1534604677}
   finalPanel: {fileID: 2116675076}

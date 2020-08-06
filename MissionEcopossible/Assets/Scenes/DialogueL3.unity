@@ -819,9 +819,9 @@ RectTransform:
   m_Father: {fileID: 758114917}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -691}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 133}
   m_SizeDelta: {x: 233.67694, y: 95.176025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &465942880
@@ -1085,18 +1085,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 839675729}
   sentences:
-  - 'Dede: Thanks for helping me clean up! My home looks great now! '
-  - 'Cece: No problem Dede! It was actually a lot of fun! Want to visit my new home
+  - 'HDede: Thanks for helping me clean up! My home looks great now! '
+  - 'NCece: No problem Dede! It was actually a lot of fun! Want to visit my new home
     now? '
-  - 'Dede: Of course!'
-  - "Cece: Let\u2019s go!"
-  - "Cece: Wait...OH NO! The plastic spread into my new home. My family can\u2019t
+  - 'NDede: Of course!'
+  - "NCece: Let\u2019s go!"
+  - "SCece: Wait...OH NO! The plastic spread into my new home. My family can\u2019t
     afford to move again\u2026 What should we do?"
-  - "Dede: Let\u2019s use the submarine again! "
+  - "SDede: Let\u2019s use the submarine again! "
   typingSpeed: 0.02
   DedeNormal: {fileID: 0}
   CeceNormal: {fileID: 0}
   BebeNormal: {fileID: 0}
+  DedeScared: {fileID: 0}
+  DedeHappy: {fileID: 0}
+  DedeAngry: {fileID: 0}
+  DedeSad: {fileID: 0}
+  CeceScared: {fileID: 0}
+  BebeScared: {fileID: 0}
   scenename: DialogueL3
   finishButton: {fileID: 465942878}
   finalPanel: {fileID: 1094578685}

@@ -270,29 +270,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 976084283}
   sentences:
-  - "Dede: Hi, I\u2019m Dede, a sea turtle who lives on the coast of Florida!"
-  - 'Dede: Let me show you around my home.'
-  - 'Cece: Hey Dede! Nice to see you again!'
-  - 'Dede: Is that Cece? She was my friend in elementary school, but I haven''t seen
-    her since she moved away.'
-  - 'Dede: Hi Cece! What are you doing back here? I thought you moved?'
-  - 'Cece: My family and I just moved back here again from the north-central Pacific
+  - "NDede: Hi, I\u2019m Dede, a sea turtle who lives on the coast of Florida!"
+  - 'NDede: Let me show you around my home.'
+  - 'NCece: Hey Dede! Nice to see you again!'
+  - 'NDede: Is that Cece? She was my friend in elementary school, but I haven''t
+    seen her since she moved away.'
+  - 'NDede: Hi Cece! What are you doing back here? I thought you moved?'
+  - 'NCece: My family and I just moved back here again from the north-central Pacific
     Ocean.'
-  - 'Cece: There was too much trash floating everywhere to the point that we lost
+  - 'NCece: There was too much trash floating everywhere to the point that we lost
     our home. '
-  - "Dede: I\u2019m so sorry\u2026 "
-  - "Dede: But I\u2019m happy that you\u2019re here now! "
-  - 'Dede: Want to come with us to my home?'
-  - 'Cece: Sure! Let''s go!'
-  - . . .
-  - "Dede: We are here! Welcome to my home\u2026"
-  - 'Dede: OH NO! What happened?! Why is there so much garbage here! '
-  - "Cece: We should clean it up before it\u2019s too late!  "
-  - "Cece: I don\u2019t want your home to be destroyed like my old one! "
-  - "Bebe: Don\u2019t even bother! There\u2019s no point in cleaning up."
-  - "Bebe: Let\u2019s just pack up our stuff and go. "
-  - "Dede: This is Bebe Shark, he\u2019s the worst..."
-  - "Cece: We have to do something\u2026 anything\u2026 "
+  - "DDede: I\u2019m so sorry\u2026 "
+  - "NDede: But I\u2019m happy that you\u2019re here now! "
+  - 'NDede: Want to come with us to my home?'
+  - 'NCece: Sure! Let''s go!'
+  - . . . .
+  - "NDede: We are here! Welcome to my home\u2026"
+  - 'SDede: OH NO! What happened?! Why is there so much garbage here! '
+  - "SCece: We should clean it up before it\u2019s too late!  "
+  - "SCece: I don\u2019t want your home to be destroyed like my old one! "
+  - "NBebe: Don\u2019t even bother! There\u2019s no point in cleaning up."
+  - "NBebe: Let\u2019s just pack up our stuff and go. "
+  - "ADede: This is Bebe Shark, he\u2019s the worst..."
+  - "SCece: We have to do something\u2026 anything\u2026 "
   typingSpeed: 0.02
   DedeNormal: {fileID: 0}
   CeceNormal: {fileID: 0}
