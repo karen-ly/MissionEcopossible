@@ -1022,7 +1022,7 @@ MonoBehaviour:
   - 'Dede: Of course!'
   - "Cece: Let\u2019s go!"
   - "Cece: Wait...OH NO! The plastic spread into my new home. My family can\u2019t
-    afford to move again\u2026What should we do?"
+    afford to move again\u2026 What should we do?"
   - "Dede: Let\u2019s use the submarine again! "
   typingSpeed: 0.02
   DedeNormal: {fileID: 0}
