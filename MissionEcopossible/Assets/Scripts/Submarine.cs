@@ -30,11 +30,11 @@ public class Submarine : MonoBehaviour
 
         // Settings based on level
         string sceneName = SceneManager.GetActiveScene().name;
-        if(sceneName == "SubmarineGameL2"){
-            delta = 1.8f;
-            subSpeed = 1f;
-            clawSpeed = 0.08f;
-        }
+        
+        delta = 1.8f;
+        subSpeed = 1f;
+        clawSpeed = 0.08f;
+        
 
         // Setting the line renderer endpoints to the subBody and claw respectively
         lineRenderer.SetPosition(0, claw.transform.position);
