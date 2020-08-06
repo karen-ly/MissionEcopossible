@@ -19,6 +19,12 @@ public class Dialogue : MonoBehaviour
     public GameObject DedeNormal;
     public GameObject CeceNormal;
     public GameObject BebeNormal;
+    public GameObject DedeScared;
+    public GameObject DedeHappy;
+    public GameObject DedeAngry;
+    public GameObject DedeSad;
+    public GameObject CeceScared;
+    public GameObject BebeScared;
 
     // newly added code
     public string scenename;
@@ -33,6 +39,12 @@ public class Dialogue : MonoBehaviour
         DedeNormal = GameObject.Find("DedeFixed");
         CeceNormal = GameObject.Find("CeceFixed");
         BebeNormal = GameObject.Find("BebeFixed");
+        DedeScared = GameObject.Find("DedeScared");
+        DedeHappy = GameObject.Find("DedeHappy");
+        DedeAngry = GameObject.Find("DedeAngry");
+        DedeSad = GameObject.Find("DedeSad");
+        CeceScared = GameObject.Find("CeceScared");
+        BebeScared = GameObject.Find("BebeScared");
 
         DisplayCharacter(sentences[index].Substring(0,4));
         StartCoroutine(Type());
@@ -65,6 +77,12 @@ public class Dialogue : MonoBehaviour
         DedeNormal.SetActive(false);
         CeceNormal.SetActive(false);
         BebeNormal.SetActive(false);
+        DedeScared.SetActive(false);
+        DedeHappy.SetActive(false);
+        DedeAngry.SetActive(false);
+        DedeSad.SetActive(false);
+        CeceScared.SetActive(false);
+        BebeScared.SetActive(false);
 
         // show correct character
         if(name.Equals("Dede")){
