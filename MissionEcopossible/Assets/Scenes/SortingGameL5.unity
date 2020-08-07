@@ -1897,7 +1897,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 609247357}
-    characterCount: 68
+    characterCount: 69
     spriteCount: 0
     spaceCount: 11
     wordCount: 10
@@ -3778,7 +3778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -691}
+  m_AnchoredPosition: {x: 0, y: -880}
   m_SizeDelta: {x: 233.67694, y: 95.176025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1620301362
