@@ -446,6 +446,7 @@ GameObject:
   - component: {fileID: 128451562}
   - component: {fileID: 128451561}
   - component: {fileID: 128451564}
+  - component: {fileID: 128451565}
   m_Layer: 5
   m_Name: teabag
   m_TagString: Untagged
@@ -564,6 +565,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &128451565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128451559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79d76142b2a4364da8ec03e99155e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1908879176}
 --- !u!1 &164946034
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,6 +2306,7 @@ GameObject:
   - component: {fileID: 931248494}
   - component: {fileID: 931248493}
   - component: {fileID: 931248496}
+  - component: {fileID: 931248497}
   m_Layer: 5
   m_Name: styrofoam
   m_TagString: Untagged
@@ -2410,6 +2425,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &931248497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931248491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79d76142b2a4364da8ec03e99155e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1908879176}
 --- !u!1 &940878415
 GameObject:
   m_ObjectHideFlags: 0
@@ -4014,6 +4042,7 @@ GameObject:
   - component: {fileID: 1645898492}
   - component: {fileID: 1645898494}
   - component: {fileID: 1645898495}
+  - component: {fileID: 1645898496}
   m_Layer: 5
   m_Name: napkin
   m_TagString: Untagged
@@ -4132,6 +4161,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1645898496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645898490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79d76142b2a4364da8ec03e99155e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1908879176}
 --- !u!1 &1908879173
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,6 +4616,7 @@ GameObject:
   - component: {fileID: 2033424040}
   - component: {fileID: 2033424039}
   - component: {fileID: 2033424042}
+  - component: {fileID: 2033424043}
   m_Layer: 5
   m_Name: straw
   m_TagString: Untagged
@@ -4692,6 +4735,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &2033424043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033424037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79d76142b2a4364da8ec03e99155e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1908879176}
 --- !u!1 &2106637390
 GameObject:
   m_ObjectHideFlags: 0
