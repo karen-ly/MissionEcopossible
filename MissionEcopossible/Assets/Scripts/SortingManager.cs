@@ -8,6 +8,7 @@ public class SortingManager : MonoBehaviour
     public GameObject wrongInfoBox;
     public GameObject finalPanel;
     private int count = 0;
+    private int targetCount = 15;
 
     // Garbage and bin items
     public GameObject apple, banana, bottle, glassbottle, ink, lightbulb, magazine, milk, battery, 
@@ -163,12 +164,12 @@ public class SortingManager : MonoBehaviour
             // apple.transform.position = binCompost.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             apple.transform.position = appleInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -183,12 +184,12 @@ public class SortingManager : MonoBehaviour
             // banana.transform.position = binCompost.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             banana.transform.position = bananaInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     }
@@ -202,12 +203,12 @@ public class SortingManager : MonoBehaviour
             // bottle.transform.position = binRecycle.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             bottle.transform.position = bottleInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -222,12 +223,12 @@ public class SortingManager : MonoBehaviour
             // glassbottle.transform.position = binRecycle.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             glassbottle.transform.position = glassbottleInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -242,12 +243,12 @@ public class SortingManager : MonoBehaviour
             // ink.transform.position = binRecycle.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             ink.transform.position = inkInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -262,12 +263,12 @@ public class SortingManager : MonoBehaviour
             // lightbulb.transform.position = binHarmful.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             lightbulb.transform.position = lightbulbInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -282,12 +283,12 @@ public class SortingManager : MonoBehaviour
             // magazine.transform.position = binRecycle.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             magazine.transform.position = magazineInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -302,12 +303,12 @@ public class SortingManager : MonoBehaviour
             // milk.transform.position = binRecycle.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             milk.transform.position = milkInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -322,12 +323,12 @@ public class SortingManager : MonoBehaviour
             // battery.transform.position = binHarmful.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             battery.transform.position = batteryInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -342,12 +343,12 @@ public class SortingManager : MonoBehaviour
             // pizzabox.transform.position = binLandfill.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             pizzabox.transform.position = pizzaboxInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -362,12 +363,12 @@ public class SortingManager : MonoBehaviour
             // snackbag.transform.position = binLandfill.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             snackbag.transform.position = snackbagInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -382,12 +383,12 @@ public class SortingManager : MonoBehaviour
             // straw.transform.position = binLandfill.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             straw.transform.position = strawInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -402,12 +403,12 @@ public class SortingManager : MonoBehaviour
             // styrofoam.transform.position = binLandfill.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             styrofoam.transform.position = styrofoamInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     }
@@ -421,12 +422,12 @@ public class SortingManager : MonoBehaviour
             // teabag.transform.position = binCompost.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             teabag.transform.position = teabagInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
@@ -441,12 +442,12 @@ public class SortingManager : MonoBehaviour
             // napkin.transform.position = binCompost.transform.position;
         }
         else {
-            // If sorting is wrong, do something FIXME
+            // If sorting is wrong, destroy the item
             napkin.transform.position = napkinInitialPos;
             wrongInfoBox.SetActive(true);
         }
         // check if user has correctly sorted all items, if so end game with pop up
-        if (count == 14) {
+        if (count == targetCount) {
             finalPanel.SetActive(true);
         }
     
