@@ -296,7 +296,7 @@ public class SortingManager : MonoBehaviour
     public void DropMilk() {
 
         float Distance = Vector3.Distance(milk.transform.position, binRecycle.transform.position);
-        if (Distance < 100) {
+        if (Distance < 50) {
             count++;
             Destroy(milk);
             // milk.transform.position = binRecycle.transform.position;
@@ -316,7 +316,7 @@ public class SortingManager : MonoBehaviour
     public void DropBattery() {
 
         float Distance = Vector3.Distance(battery.transform.position, binHarmful.transform.position);
-        if (Distance < 100) {
+        if (Distance < 50) {
             count++;
             Destroy(battery);
             // battery.transform.position = binHarmful.transform.position;
@@ -336,7 +336,7 @@ public class SortingManager : MonoBehaviour
     public void DropPizzabox() {
 
         float Distance = Vector3.Distance(pizzabox.transform.position, binLandfill.transform.position);
-        if (Distance < 100) {
+        if (Distance < 50) {
             count++;
             Destroy(pizzabox);
             // pizzabox.transform.position = binLandfill.transform.position;
@@ -356,7 +356,7 @@ public class SortingManager : MonoBehaviour
     public void DropSnackbag() {
 
         float Distance = Vector3.Distance(snackbag.transform.position, binLandfill.transform.position);
-        if (Distance < 100) {
+        if (Distance < 50) {
             count++;
             Destroy(snackbag);
             // snackbag.transform.position = binLandfill.transform.position;
@@ -376,7 +376,7 @@ public class SortingManager : MonoBehaviour
     public void DropStraw() {
 
         float Distance = Vector3.Distance(straw.transform.position, binLandfill.transform.position);
-        if (Distance < 100) {
+        if (Distance < 50) {
             count++;
             Destroy(straw);
             // straw.transform.position = binLandfill.transform.position;
@@ -396,7 +396,7 @@ public class SortingManager : MonoBehaviour
     public void DropStyrofoam() {
 
         float Distance = Vector3.Distance(styrofoam.transform.position, binLandfill.transform.position);
-        if (Distance < 100) {
+        if (Distance < 50) {
             count++;
             Destroy(styrofoam);
             // styrofoam.transform.position = binLandfill.transform.position;
@@ -415,7 +415,7 @@ public class SortingManager : MonoBehaviour
     public void DropTeabag() {
 
         float Distance = Vector3.Distance(teabag.transform.position, binCompost.transform.position);
-        if (Distance < 100) {
+        if (Distance < 50) {
             count++;
             Destroy(teabag);
             // teabag.transform.position = binCompost.transform.position;
