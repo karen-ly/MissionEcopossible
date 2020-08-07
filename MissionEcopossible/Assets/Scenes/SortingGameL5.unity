@@ -3869,6 +3869,7 @@ GameObject:
   - component: {fileID: 1632946959}
   - component: {fileID: 1632946958}
   - component: {fileID: 1632946957}
+  - component: {fileID: 1632946961}
   m_Layer: 5
   m_Name: pizzabox
   m_TagString: Untagged
@@ -3987,6 +3988,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632946955}
   m_CullTransparentMesh: 0
+--- !u!114 &1632946961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632946955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79d76142b2a4364da8ec03e99155e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1908879176}
 --- !u!1 &1645898490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4327,6 +4341,7 @@ GameObject:
   - component: {fileID: 1961541256}
   - component: {fileID: 1961541255}
   - component: {fileID: 1961541258}
+  - component: {fileID: 1961541259}
   m_Layer: 5
   m_Name: snackbag
   m_TagString: Untagged
@@ -4445,6 +4460,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1961541259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961541253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79d76142b2a4364da8ec03e99155e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1908879176}
 --- !u!1 &2013962543
 GameObject:
   m_ObjectHideFlags: 0
