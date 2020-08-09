@@ -13,15 +13,15 @@ public class SceneChange : MonoBehaviour
 
     IEnumerator DelaySceneLoad(string level)
  	{
-     	
+        yield return new WaitForSeconds(0.5f);
 
-        if (level.Equals("Levels"))
+        if (level.Equals("Levels") || level.Equals("Menu"))
         {
             LoadingData.sceneToLoad = level;
-            SceneManager.LoadScene("Loading");
+            SceneManager.LoadSceneAsync("Loading");
         }
         else {
-            yield return new WaitForSeconds(0.5f);
+            
             SceneManager.LoadScene(level);
         }
 
