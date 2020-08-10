@@ -10,22 +10,41 @@ public class SceneChange : MonoBehaviour
     {
 		StartCoroutine(DelaySceneLoad(level));
     }
-
+    
     IEnumerator DelaySceneLoad(string level)
  	{
         yield return new WaitForSeconds(0.5f);
 
-        if (level.Equals("Levels") || level.Equals("Menu"))
+        //if (level.Equals("Levels") || level.Equals("Menu"))
+        //{
+        //    LoadingData.sceneToLoad = level;
+        //   SceneManager.LoadSceneAsync("Loading");
+        //}
+        //else {
+            
+        //    SceneManager.LoadScene(level);
+        //}
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if ((sceneName == "Levels" || sceneName == "Menu") && (!level.Equals("Settings")))
+        {
+               LoadingData.sceneToLoad = level;
+                SceneManager.LoadSceneAsync("Loading");
+            
+        }
+        else if ((level.Equals("Levels") || level.Equals("Menu")) && (!sceneName.Equals("Settings")))
         {
             LoadingData.sceneToLoad = level;
             SceneManager.LoadSceneAsync("Loading");
         }
         else {
-            
             SceneManager.LoadScene(level);
         }
+        
+        
 
-       
  	}
 }
 
