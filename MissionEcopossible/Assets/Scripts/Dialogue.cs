@@ -25,6 +25,7 @@ public class Dialogue : MonoBehaviour
     public GameObject DedeSad;
     public GameObject CeceScared;
     public GameObject BebeScared;
+    public GameObject CeceExcited;
 
     // newly added code
     public string scenename;
@@ -45,6 +46,7 @@ public class Dialogue : MonoBehaviour
         DedeSad = GameObject.Find("DedeSad");
         CeceScared = GameObject.Find("CeceScared");
         BebeScared = GameObject.Find("BebeScared");
+        CeceExcited = GameObject.Find("CeceExcited");
 
         DisplayCharacter(sentences[index].Substring(0,5));
         StartCoroutine(Type());
@@ -83,6 +85,7 @@ public class Dialogue : MonoBehaviour
         DedeSad.SetActive(false);
         CeceScared.SetActive(false);
         BebeScared.SetActive(false);
+        CeceExcited.SetActive(false);
 
         // show correct character
         if(name.Equals("NDede")){
@@ -111,6 +114,9 @@ public class Dialogue : MonoBehaviour
         }
         else if(name.Equals("SBebe")){
             BebeScared.SetActive(true);
+        }
+        else if(name.Equals("ECece")){
+            CeceExcited.SetActive(true);
         }
     }
 
