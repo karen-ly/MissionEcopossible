@@ -162,8 +162,7 @@ public class SortingManager : MonoBehaviour
             count++;
             Destroy(apple);
             // apple.transform.position = binCompost.transform.position;
-        }
-        else {
+        } else {
             // If sorting is wrong, destroy the item
             apple.transform.position = appleInitialPos;
             wrongInfoBox.SetActive(true);
