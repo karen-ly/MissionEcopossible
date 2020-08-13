@@ -37,9 +37,7 @@ Built with C#, Unity
 
 ## Installation
 
-There are different ways to get the GnuCash app for Android; through
-the app store, from github or building it yourself.
-
+Coming soon!
 
 ### App Store
 
@@ -48,8 +46,6 @@ the app store, from github or building it yourself.
 </a>
 
 ### From GitHub
-
-Download the .apk from https://github.com/codinguser/gnucash-android/releases
 
 ## Building
 
