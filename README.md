@@ -1,8 +1,8 @@
 # Mission Ecopossible
 ## Introduction
 
-GnuCash Android is a companion expense-tracker application for GnuCash (desktop) designed for Android.
-It allows you to record transactions on-the-go and later import the data into GnuCash for the desktop.
+Mission Ecopossible is an interactive and story-like game that educates users about the importance of proper waste disposal and how they can apply it to their everyday life. It is more fun among all resources to learn about trash sorting and ocean pollution for young audiences because players can interact with unique characters, see the direct impact of pollution on ocean life, and practice collecting and sorting garbage through mini games.
+
 
 Accounts            |  Transactions          |  Reports
 :-------------------------:|:-------------------------:|:-------------------------:
