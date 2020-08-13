@@ -7,7 +7,7 @@ Technical Coach: Ravin Jain
 
 Graphics designed by: Fan Wang
 
-![](DemoImages/characters.png)
+<img src="DemoImages/characters.png" width="300" height="270">
 
 ### Technologies Used: 
 Built with C#, Unity
