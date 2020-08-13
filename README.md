@@ -1,4 +1,5 @@
-# Introduction
+# Mission Ecopossible
+## Introduction
 
 GnuCash Android is a companion expense-tracker application for GnuCash (desktop) designed for Android.
 It allows you to record transactions on-the-go and later import the data into GnuCash for the desktop.
@@ -30,8 +31,9 @@ Features include:
 
   * **Reports**: View summary of transactions (income and expenses) as pie/bar/line charts
 
+## Demonstration
 
-# Installation
+## Installation
 
 There are different ways to get the GnuCash app for Android; through
 the app store, from github or building it yourself.
@@ -76,7 +78,7 @@ Once installed, then you can import the project into Android Studio:
 
 Then, Gradle will do everything for you.
 
-# Features In Progress
+## Features In Progress
 GnuCash Android is free software; you can redistribute it and/or
 modify it under the terms of the Apache license, version 2.0.
 You may obtain a copy of the License at
