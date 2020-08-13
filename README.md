@@ -1,190 +1,113 @@
-***INSERT GRAPHIC HERE (include hyperlink in image)***
+<a href="https://travis-ci.org/codinguser/gnucash-android" target="_blank">
+<img src="https://travis-ci.org/codinguser/gnucash-android.svg?branch=develop" alt="Travis build status" />
+</a>
 
-# Mission Ecopossible
+# Introduction
 
-> Mission Ecopossible is an in-progress Android mobile game created by the team ECOders as part of Dandilyonn SEEDS program. 
+GnuCash Android is a companion expense-tracker application for GnuCash (desktop) designed for Android.
+It allows you to record transactions on-the-go and later import the data into GnuCash for the desktop.
 
-**Badges will go here**
+Accounts            |  Transactions          |  Reports
+:-------------------------:|:-------------------------:|:-------------------------:
+![Accounts List](docs/images/v2.0.0_home.png)  |  ![Transactions List](docs/images/v2.0.0_transactions_list.png) |  ![Reports](docs/images/v2.0.0_reports.png)
 
-- build status
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
+The application supports Android 4.4 KitKat (API level 19) and above.
 
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
+Features include:
 
-- For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
+  * An easy-to-use interface.
 
-***INSERT ANOTHER GRAPHIC HERE***
+  * **Chart of Accounts**: A master account can have a hierarchy of detail accounts underneath it.  
+    This allows similar account types (e.g. Cash, Bank, Stock) to be grouped into one master account (e.g. Assets).
 
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
+  * **Split Transactions**: A single transaction can be split into several pieces to record taxes, fees, and other compound entries.
 
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
+  * **Double Entry**: Every transaction must debit one account and credit another by an equal amount.
+    This ensures that the "books balance": that the difference between income and outflow exactly
+    equals the sum of all assets, be they bank, cash, stock or other.
 
-> Tips
+  * **Income/Expense Account Types (Categories)**: These serve not only to categorize your cash flow, but when used properly with the double-entry feature, these can provide an accurate Profit&Loss statement.
 
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
+  * **Scheduled Transactions**: GnuCash has the ability to automatically create and enter transactions.
 
-> GIF Tools
+  * **Export to GnuCash XML**, QIF or OFX. Also, scheduled exports to 3rd-party sync services like DropBox and Google Drive
 
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
-
----
-
-## Table of Contents (Optional)
-
-> If your `README` has a lot of info, section headers might be nice.
-
-- [Installation](#installation)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Team](#team)
-- [FAQ](#faq)
-- [Support](#support)
-- [License](#license)
+  * **Reports**: View summary of transactions (income and expenses) as pie/bar/line charts
 
 
----
+# Installation
 
-## Example (Optional)
+There are different ways to get the GnuCash app for Android; through
+the app store, from github or building it yourself.
 
-```javascript
-// code away!
 
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
-```
+### App Store
 
----
+<a href="http://play.google.com/store/apps/details?id=org.gnucash.android">
+  <img alt="Android app on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+</a>
 
-## Installation
+### From GitHub
 
-- All the `code` required to get started
-- Images of what it should look like
+Download the .apk from https://github.com/codinguser/gnucash-android/releases
 
-### Clone
+## Building
 
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
+### With Gradle
 
-### Setup
+This project requires the [Android SDK](http://developer.android.com/sdk/index.html)
+to be installed in your development environment. In addition you'll need to set
+the `ANDROID_HOME` environment variable to the location of your SDK. For example:
 
-- If you want more syntax highlighting, format your code like this:
+    export ANDROID_HOME=/home/<user>/tools/android-sdk
 
-> update and install this package first
+After satisfying those requirements, the build is pretty simple:
 
-```shell
-$ brew update
-$ brew install fvcproductions
-```
+* Run `./gradlew build installDevelopmentDebug` from the within the project folder.
+It will build the project for you and install it to the connected Android device or running emulator.
 
-> now install npm and bower packages
+The app is configured to allow you to install a development and production version in parallel on your device.
 
-```shell
-$ npm install
-$ bower install
-```
+### With Android Studio
+The easiest way to build is to install [Android Studio](https://developer.android.com/sdk/index.html) v2.+
+with [Gradle](https://www.gradle.org/) v3.4.1
+Once installed, then you can import the project into Android Studio:
 
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+1. Open `File`
+2. Import Project
+3. Select `build.gradle` under the project directory
+4. Click `OK`
 
----
-
-## Features
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
-
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
-
----
-
-## Contributing
-
-> To get started...
-
-### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
-
-### Step 2
-
-- **HACK AWAY!** 🔨🔨🔨
-
-### Step 3
-
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
-
----
-
-## Team
-
-> Or Contributors/People
-
-| <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> |
-| :---: |:---:| :---:|
-| [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)    | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
-| <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
-
-- You can just grab their GitHub profile image URL
-- You should probably resize their picture using `?s=200` at the end of the image URL.
-
----
-
-## FAQ
-
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
-
----
+Then, Gradle will do everything for you.
 
 ## Support
 
-Reach out to me at one of the following places!
+Google+ Community: https://plus.google.com/communities/104728406764752407046
 
-- Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
-- Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
-- Insert more social links here.
+## Contributing
 
----
+There are several ways you could contribute to the development.
 
-## Donations (Optional)
+* Pull requests are always welcome! You could contribute code by fixing bugs, adding new features or automated tests. 
+Take a look at the [bug tracker](https://github.com/codinguser/gnucash-android/issues?state=open)
+for ideas where to start. It is also preferable to target issues in the current [milestone](https://github.com/codinguser/gnucash-android/milestones). 
+* Make sure to read our [contribution guidelines](https://github.com/codinguser/gnucash-android/blob/master/.github/CONTRIBUTING.md) before starting to code. 
 
-- You could include a <a href="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png" target="_blank">Gratipay</a> link as well.
+* Another way to contribute is by providing translations for languages, or improving translations.
+Please visit [CrowdIn](https://crowdin.com/project/gnucash-android) in order to update and create new translations
 
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/fvcproductions/)
+For development, it is recommended to use the Android Studio for development which is available for free.
+Import the project into the IDE using the build.gradle file. The IDE will resolve dependencies automatically.
 
+# Licence
+GnuCash Android is free software; you can redistribute it and/or
+modify it under the terms of the Apache license, version 2.0.
+You may obtain a copy of the License at
 
----
+       http://www.apache.org/licenses/LICENSE-2.0
 
-## License
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
