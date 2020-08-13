@@ -3,33 +3,6 @@
 
 Mission Ecopossible is an interactive and story-like game that educates users about the importance of proper waste disposal and how they can apply it to their everyday life. It is more fun among all resources to learn about trash sorting and ocean pollution for young audiences because players can interact with unique characters, see the direct impact of pollution on ocean life, and practice collecting and sorting garbage through mini games.
 
-
-Accounts            |  Transactions          |  Reports
-:-------------------------:|:-------------------------:|:-------------------------:
-![Accounts List](docs/images/v2.0.0_home.png)  |  ![Transactions List](docs/images/v2.0.0_transactions_list.png) |  ![Reports](docs/images/v2.0.0_reports.png)
-
-The application supports Android 4.4 KitKat (API level 19) and above.
-
-Features include:
-
-  * An easy-to-use interface.
-
-  * **Chart of Accounts**: A master account can have a hierarchy of detail accounts underneath it.  
-    This allows similar account types (e.g. Cash, Bank, Stock) to be grouped into one master account (e.g. Assets).
-
-  * **Split Transactions**: A single transaction can be split into several pieces to record taxes, fees, and other compound entries.
-
-  * **Double Entry**: Every transaction must debit one account and credit another by an equal amount.
-    This ensures that the "books balance": that the difference between income and outflow exactly
-    equals the sum of all assets, be they bank, cash, stock or other.
-
-  * **Income/Expense Account Types (Categories)**: These serve not only to categorize your cash flow, but when used properly with the double-entry feature, these can provide an accurate Profit&Loss statement.
-
-  * **Scheduled Transactions**: GnuCash has the ability to automatically create and enter transactions.
-
-  * **Export to GnuCash XML**, QIF or OFX. Also, scheduled exports to 3rd-party sync services like DropBox and Google Drive
-
-  * **Reports**: View summary of transactions (income and expenses) as pie/bar/line charts
 ### Technologies Used: 
 Built with C#, Unity
 
