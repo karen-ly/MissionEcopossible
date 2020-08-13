@@ -26,7 +26,7 @@ Coming soon!
 
 ## Building
 
-### With Gradle
+### With xCode
 
 This project requires the [Android SDK](http://developer.android.com/sdk/index.html)
 to be installed in your development environment. In addition you'll need to set
