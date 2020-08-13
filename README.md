@@ -30,6 +30,7 @@ Features include:
   * **Export to GnuCash XML**, QIF or OFX. Also, scheduled exports to 3rd-party sync services like DropBox and Google Drive
 
   * **Reports**: View summary of transactions (income and expenses) as pie/bar/line charts
+### Technologies Used: C#, Unity
 
 ## Demonstration
 
