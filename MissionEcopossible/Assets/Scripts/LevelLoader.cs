@@ -17,26 +17,21 @@ public class LevelLoader : MonoBehaviour
      
         loadingScreen.SetActive(true);
         funFact.text = texts[Random.Range(0, texts.Length)];
-        StartCoroutine(waitForSeconds(5));
-        
+        StartCoroutine(waitForSeconds(2.5f));
     }
 
-    IEnumerator waitForSeconds(int seconds) {
+    IEnumerator waitForSeconds(float seconds) {
             yield return new WaitForSeconds(seconds);
-        StartCoroutine(LoadYourAsyncScene());
+            StartCoroutine(LoadYourAsyncScene());
     }
 
     IEnumerator LoadYourAsyncScene() {
         asyncLoad = SceneManager.LoadSceneAsync(LoadingData.sceneToLoad);
-        if (asyncLoad.isDone)
-        {
-            Debug.Log("Did Wait2");
-            yield return new WaitForSeconds(2);
-        }
+      
         while (!asyncLoad.isDone) {
             float progress = Mathf.Clamp01(asyncLoad.progress / .9f);
             slider.value = progress;
-            progressText.text =(int) progress * 100f + "%";
+            progressText.text = progress * 100f + "%";
             yield return null; 
         }
     }
