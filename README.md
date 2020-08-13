@@ -1,7 +1,11 @@
 # Mission Ecopossible
 ## Introduction
 
-Mission Ecopossible is an interactive and story-like game that educates users about the importance of proper waste disposal and how they can apply it to their everyday life. It is more fun among all resources to learn about trash sorting and ocean pollution for young audiences because players can interact with unique characters, see the direct impact of pollution on ocean life, and practice collecting and sorting garbage through mini games.
+This app was created by ECOders, a team consisting of Anisha Kabir, Fan Wang, Karen Ly, and Zhuofan Li, who participated in Dandilyonn’s 2020 SEEDs program. Mission Ecopossible is an interactive mobile game that seeks to educate users about ocean pollution and the proper disposal of waste.
+
+Technical Coach: Ravin Jain 
+
+Graphics designed by: Fan Wang
 
 ### Technologies Used: 
 Built with C#, Unity
