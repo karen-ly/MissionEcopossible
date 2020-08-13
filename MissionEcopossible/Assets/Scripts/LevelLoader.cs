@@ -31,7 +31,7 @@ public class LevelLoader : MonoBehaviour
         while (!asyncLoad.isDone) {
             float progress = Mathf.Clamp01(asyncLoad.progress / .9f);
             slider.value = progress;
-            progressText.text = progress * 100f + "%";
+            progressText.text = Mathf.Round(progress * 100f) + "%";
             yield return null; 
         }
     }
