@@ -76,7 +76,7 @@ Once installed, then you can import the project into Android Studio:
 
 Then, Gradle will do everything for you.
 
-# Licence
+# Features In Progress
 GnuCash Android is free software; you can redistribute it and/or
 modify it under the terms of the Apache license, version 2.0.
 You may obtain a copy of the License at
