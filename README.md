@@ -13,6 +13,13 @@ Graphics designed by: Fan Wang
 Built with C#, Unity
 
 ## Demonstration
+# Loading Scene
+
+# Dialogue Scene
+
+# Submarine Game
+
+# Sorting Game 
 
 ## Installation
 
