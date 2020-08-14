@@ -66,7 +66,7 @@ After installing the correct component, you can build and export the game inside
 Then, Unity will build the game for you.
 
 ## Features In Progress
-- Tracking player's progress through different chapters and levels
+- Track player's progress through different chapters and levels
 - Create a better badges panel that updates everytime the user completes a chapter
 - Implement a working restart button in settings page to delete all of user's progress
 - Lock uncompleted levels
