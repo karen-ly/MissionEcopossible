@@ -7,7 +7,7 @@ Technical Coach: Ravin Jain
 
 Graphics designed by: Fan Wang
 
-<img src="DemoImages/characters.png" width="300" height="270">
+<img src="DemoImages/characters.png" title='Mission Ecopossible Characters' width="300" height="270">
 
 ### Technologies Used: 
 Built with C#, Unity
