@@ -72,3 +72,4 @@ Then, Unity will build the game for you.
 - Lock uncompleted levels
 - Improve loading page for smoother transition
 - More characters and more maps
+- Add time limit and leadership board for mini games
