@@ -13,13 +13,13 @@ Graphics designed by: Fan Wang
 Built with C#, Unity
 
 ## Demonstration
-# Loading Scene
+### Loading Scene
 
-# Dialogue Scene
+### Dialogue Scene
 
-# Submarine Game
+### Submarine Game
 
-# Sorting Game 
+### Sorting Game 
 
 ## Installation
 
