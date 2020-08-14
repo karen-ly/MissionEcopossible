@@ -21,7 +21,7 @@ For each level of chapter 1, the player interacts with the main characters (Dede
 <img src='http://g.recordit.co/LFFty51jTW.gif' title='Dialogue Sample' width='' alt='Dialogue Sample' />
 
 ### Submarine Game
-In levels 2, 3, and 4, the player plays a submarine mini game to help the main characters clean up their homes. By pressing and holding down the screen, the submarine extends its claw to collect a new item. Each time a trash item is collected, its name and category is displayed for the player to remember. 
+In levels 2, 3, and 4, there is a submarine mini game to help the main characters clean up their homes. By pressing and holding down the screen, the player can extend the submarine's claw to collect a new item. Each time a trash item is collected, its name and category is displayed for the player to remember. 
 
 <img src='DemoImages/subGame.gif' title='Submarine Game' width='' alt='Submarine Game' />
 
