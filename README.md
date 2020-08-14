@@ -27,10 +27,6 @@ Coming soon!
 
 ### App Store
 
-<a href="http://play.google.com/store/apps/details?id=org.gnucash.android">
-  <img alt="Android app on Google Play"/>
-</a>
-
 ### From GitHub
 
 ## Building
