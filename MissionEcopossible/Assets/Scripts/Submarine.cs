@@ -91,8 +91,8 @@ public class Submarine : MonoBehaviour
 
     public void Pause(){
         // Moves claw's position to the top
-        claw.transform.position = new Vector2(claw.transform.position.x, 2);
         clawPause = true;
+        claw.transform.position = new Vector2(claw.transform.position.x, 2);
     }
 
     public void Continue(){

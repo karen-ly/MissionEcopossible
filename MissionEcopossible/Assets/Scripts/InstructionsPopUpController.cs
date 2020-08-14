@@ -11,6 +11,7 @@ public class InstructionsPopUpController : MonoBehaviour
     public Text continueText;
     public int nextDisplayedText = 0;
     public bool isReadyForNext = false;
+    public Submarine subControlScript;
 
     // Start is called before the first frame update
     void Start(){
@@ -18,6 +19,8 @@ public class InstructionsPopUpController : MonoBehaviour
         instructionsPopUpUI = GameObject.Find("InstructionsPanel");
         instructText = GameObject.Find("InstructText").GetComponent<Text>();
         continueText = GameObject.Find("ContinueText").GetComponent<Text>();
+        Time.timeScale = 0f;
+        subControlScript.Pause();
 
         StartCoroutine(waiter());
     }
@@ -32,8 +35,9 @@ public class InstructionsPopUpController : MonoBehaviour
                         StartCoroutine(waiter());
                     }
                     else{
-                        instructionsPopUpUI.SetActive(false); // hides the pop up
                         Time.timeScale = 1f;
+                        subControlScript.Continue();
+                        instructionsPopUpUI.SetActive(false); // hides the pop up
                     }
                 }
             }
