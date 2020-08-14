@@ -21,11 +21,12 @@ For each level of chapter 1, the player interacts with the main characters (Dede
 <img src='http://g.recordit.co/LFFty51jTW.gif' title='Dialogue Sample' width='' alt='Dialogue Sample' />
 
 ### Submarine Game
+In levels 2, 3, and 4, the player plays a submarine mini game to help the main characters clean up their homes. By pressing and holding down the screen, the submarine extends its claw to collect a new item. Each time a trash item is collected, its name and category is displayed for the player to remember. 
 
 <img src='DemoImages/subGame.gif' title='Submarine Game' width='' alt='Submarine Game' />
 
 ### Sorting Game 
-After the player collects the garbage at Levels 2, 3 and 4, the player sorts all of them at Level 5. By dragging the garbage item into the corresponding trash bin, the player can enhance their sorting knowledge they learned in the submarine game in Levels 2, 3 and 4. A reminder will pop up if the garbage item is not placed in the correct trash bin.
+After the player collects the garbage at levels 2, 3 and 4, the player sorts all of them at level 5. By dragging the garbage item into the corresponding trash bin, the player can enhance their sorting knowledge they learned in the submarine game in levels 2, 3 and 4. A reminder will pop up if the garbage item is not placed in the correct trash bin.
 
 <img src='DemoImages/sortingGame.gif' title='Sorting Game' width='' alt='Sorting Game' />
 
