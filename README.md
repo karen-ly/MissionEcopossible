@@ -37,32 +37,30 @@ Coming soon!
 
 ## Building
 
-### With xCode
+### With UnityHub and Unity Editor
 
-This project requires the [Android SDK](http://developer.android.com/sdk/index.html)
-to be installed in your development environment. In addition you'll need to set
-the `ANDROID_HOME` environment variable to the location of your SDK. For example:
+This project requires the [Unity Hub](https://unity3d.com/get-unity/download) to be installed in your development environment. 
+In addition, you will need to download the Unity Editor ([**Unity 2019.2.3f1**](https://unity3d.com/get-unity/download/archive)) and install it 
+with iOS Build Support or any other module according to your device. Then you need to add the Unity Editor you just downloaded into your Unity Hub.
 
-    export ANDROID_HOME=/home/<user>/tools/android-sdk
+1. Open Unity Hub
+2. Select 'Installs' 
+3. Click 'Locate' and add the Editor
+4. If you don't find the module you want, click the three dots to the right of the version label, then click 'Add Modules'
+5. Select all the Modules you want
+6. Click 'Done'
 
-After satisfying those requirements, the build is pretty simple:
+After installing the correct component, you can build and export the game inside the Unity Editor now.
 
-* Run `./gradlew build installDevelopmentDebug` from the within the project folder.
-It will build the project for you and install it to the connected Android device or running emulator.
+1. Open Unity Hub
+2. In the 'Projects' panel, click 'Add' and find this project on your computer
+3. Open the project you just added
+4. Open 'File'
+5. Select 'Build Settings'
+6. Choose the platform you want to build on, click 'Build'
+7. Make sure you installed the Build Support for the platform you choose
 
-The app is configured to allow you to install a development and production version in parallel on your device.
-
-### With Android Studio
-The easiest way to build is to install [Android Studio](https://developer.android.com/sdk/index.html) v2.+
-with [Gradle](https://www.gradle.org/) v3.4.1
-Once installed, then you can import the project into Android Studio:
-
-1. Open `File`
-2. Import Project
-3. Select `build.gradle` under the project directory
-4. Click `OK`
-
-Then, Gradle will do everything for you.
+Then, Unity will build the game for you.
 
 ## Features In Progress
 - Tracking player's progress through different chapters and levels
