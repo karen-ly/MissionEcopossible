@@ -68,3 +68,4 @@ Then, Gradle will do everything for you.
 - Tracking player's progress through different chapters and levels
 - Create a better badges panel that updates everytime the user completes a chapter
 - Implement a working restart button in settings page to delete all of user's progress
+- Lock uncompleted levels
