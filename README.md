@@ -21,7 +21,7 @@ Coming soon!
 ### App Store
 
 <a href="http://play.google.com/store/apps/details?id=org.gnucash.android">
-  <img alt="Android app on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
+  <img alt="Android app on Google Play"/>
 </a>
 
 ### From GitHub
