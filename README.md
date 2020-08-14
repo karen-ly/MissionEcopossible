@@ -16,7 +16,7 @@ Built with C#, Unity
 ### Loading Scene
 
 ### Dialogue Scene
-
+<img src='http://g.recordit.co/LFFty51jTW.gif' title='Dialogue Sample' width='' alt='Dialogue Sample' />
 ### Submarine Game
 
 ### Sorting Game 
