@@ -25,7 +25,6 @@ For each level of chapter 1, the player interacts with the main characters (Dede
 ### Sorting Game 
 After the player collects all the garbages at Level 2, 3 and 4, the player sorts all of them at Level 5. By dragging garbage item into the corresponding trash bin, the player can enhance the sorting knowledge we learnt in the submarine game at Level 2, 3 and 4. A reminder will pop up if the garbage item is not placed in the correct trash bin.
 
-<img src='DemoImages/sortingGame.gif' title='Sorting Game' width='' alt='Sorting Game' />
 ![](DemoImages/sortingGame.gif)
 
 ## Installation
