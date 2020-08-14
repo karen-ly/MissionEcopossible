@@ -16,7 +16,9 @@ Built with C#, Unity
 ### Loading Scene
 
 ### Dialogue Scene
+For each level of chapter 1, the player interacts with the main characters (Dede, Bebe, and Cece) and learn more about their unique stories.
 <img src='http://g.recordit.co/LFFty51jTW.gif' title='Dialogue Sample' width='' alt='Dialogue Sample' />
+
 ### Submarine Game
 
 ### Sorting Game 
