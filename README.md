@@ -39,8 +39,6 @@ Coming soon!
 
 ### App Store
 
-### From GitHub
-
 ## Building
 
 ### With UnityHub and Unity Editor
