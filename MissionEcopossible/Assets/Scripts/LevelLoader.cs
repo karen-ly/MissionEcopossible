@@ -17,7 +17,7 @@ public class LevelLoader : MonoBehaviour
      
         loadingScreen.SetActive(true);
         funFact.text = texts[Random.Range(0, texts.Length)];
-        StartCoroutine(waitForSeconds(2.5f));
+        StartCoroutine(waitForSeconds(1.5f));
     }
 
     IEnumerator waitForSeconds(float seconds) {
