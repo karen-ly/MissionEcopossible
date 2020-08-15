@@ -12,11 +12,11 @@ Graphics designed by: Fan Wang
 ### Technologies Used: 
 Built with C#, Unity
 
-## Demonstration
+## Features
 ### Loading Scene
 Between several scene changes, there will be a loading scene with fun facts or tips about recycling.
 
-<img src='DemoImages/loading.gif' title='Loading Scene' width='' alt='Loading Scene' />
+<img src='DemoImages/loading.gif' title='Loading Scene' width='' alt='Loading Scene' width="312" height="679"/>
 
 ### Dialogue Scene
 For each level of chapter 1, the player interacts with the main characters (Dede, Bebe, and Cece) and learn more about their unique stories.
