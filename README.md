@@ -17,6 +17,7 @@ Built with C#, Unity
 Between scene and scene, there will be a loading scene with fun facts about recycling.
 
 <img src='DemoImages/loading.gif' title='Loading Scene' width='' alt='Loading Scene' />
+
 ### Dialogue Scene
 For each level of chapter 1, the player interacts with the main characters (Dede, Bebe, and Cece) and learn more about their unique stories.
 
