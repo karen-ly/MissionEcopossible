@@ -427,11 +427,14 @@ MonoBehaviour:
     Wang, Karen Ly, and Zhuofan Li, who participated in Dandilyonn\u2019s 2020 SEEDs
     program. Mission Ecopossible is an interactive mobile game that seeks to educate
     users about ocean pollution and the proper disposal of waste.\n\nTechnical Coach:
-    Ravin Jain \n\nGraphics designed by Fan Wang\n\nMusic Used:\nJeremy Blake - \"Powerup!\"\nhttps://www.youtube.com/watch?v=l7SwiFWOQqM&amp;index=5\n\nAlexander
-    - Nature Sounds Ocean Waves For Relaxation\nhttp://www.orangefreesounds.com/nature-sounds-ocean-waves-for-relaxation/\n\nSound
+    Ravin Jain \n\nGraphics designed by: Fan Wang\n\nMusic Used:\nJeremy Blake -
+    \"Powerup!\"\nhttps://www.youtube.com/watch?v=l7SwiFWOQqM&amp;index=5\n\nAlexander
+    - Nature Sounds Ocean Waves For Relaxation\nhttp://www.orangefreesounds.com/nature-sounds-ocean-waves-for-relaxation/\n\nMusMus-BGM-078\n\nMaoudamashii
+    - \"game_maoudamashii_5_town25b\" https://maoudamashii.jokersounds.com/archives/game_maoudamashii_5_town25b.html\n\nsuper
+    noot ensemble - \"Memo cute 8 bit chiptune\"  https://www.youtube.com/watch?v=ox_T5Ia_Y0A\n\nSound
     Effects Used:\nSoundBible.com - Blop Sound \nhttp://soundbible.com/2067-Blop.html\n\nLT
     Sound Effects - Free Sound Effect: Video Game Menu Select\nhttps://www.youtube.com/watch?v=X-aU6-cSRdA\n\nOMS
-    Royalty Free Music - Button 1\nhttps://www.youtube.com/watch?v=iFzgeVoA7DQ\n\nZapslat\nhttps://www.zapsplat.com\n\nMusMus-BGM-078\n\nIcons
+    Royalty Free Music - Button 1\nhttps://www.youtube.com/watch?v=iFzgeVoA7DQ\n\nZapslat\nhttps://www.zapsplat.com\n\nIcons
     downloaded from Unity Asset Store\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50a10deff60d4454eae17950693cecbe, type: 2}
@@ -502,12 +505,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 11.622998}
   m_textInfo:
     textComponent: {fileID: 486943024}
-    characterCount: 940
+    characterCount: 1161
     spriteCount: 0
-    spaceCount: 123
-    wordCount: 142
+    spaceCount: 140
+    wordCount: 176
     linkCount: 0
-    lineCount: 48
+    lineCount: 59
     pageCount: 1
     materialCount: 2
   m_isUsingLegacyAnimationComponent: 0

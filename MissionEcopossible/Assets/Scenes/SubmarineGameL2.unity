@@ -2548,6 +2548,7 @@ MonoBehaviour:
   continueText: {fileID: 0}
   nextDisplayedText: 0
   isReadyForNext: 0
+  subControlScript: {fileID: 679774683}
 --- !u!1 &979069811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2891,7 +2892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 56.322998, y: -48.758057}
+  m_AnchoredPosition: {x: 56.323242, y: -48.757812}
   m_SizeDelta: {x: 163.96097, y: 139.51428}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209165286
