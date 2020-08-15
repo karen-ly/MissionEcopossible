@@ -15,12 +15,11 @@ public class InstructionsPopUpController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
+        subControlScript.PauseClaw();
         instructions = new string[] {"Help Dede and Cece collect trash with the submarine!", "Tap and hold down to extend the submarine claw", "Touch items with the claw to collect them", "Remember the name and category of each item", "Now, to the game!"};
         instructionsPopUpUI = GameObject.Find("InstructionsPanel");
         instructText = GameObject.Find("InstructText").GetComponent<Text>();
         continueText = GameObject.Find("ContinueText").GetComponent<Text>();
-        Time.timeScale = 0f;
-        subControlScript.Pause();
 
         StartCoroutine(waiter());
     }
@@ -35,9 +34,8 @@ public class InstructionsPopUpController : MonoBehaviour
                         StartCoroutine(waiter());
                     }
                     else{
-                        Time.timeScale = 1f;
-                        subControlScript.Continue();
-                        instructionsPopUpUI.SetActive(false); // hides the pop up
+                        instructionsPopUpUI.SetActive(false);
+                        subControlScript.Continue(); // hides the pop up
                     }
                 }
             }
