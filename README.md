@@ -14,7 +14,7 @@ Built with C#, Unity
 
 ## Demonstration
 ### Loading Scene
-Between scene and scene, there will be a loading scene with fun facts about recycling.
+Between scene and scene, there will be a loading scene with fun facts or tips about recycling.
 
 <img src='DemoImages/loading.gif' title='Loading Scene' width='' alt='Loading Scene' />
 
