@@ -3,6 +3,9 @@
 
 This app was created by ECOders, a team consisting of Anisha Kabir, Fan Wang, Karen Ly, and Zhuofan Li, who participated in Dandilyonn’s 2020 SEEDs program. Mission Ecopossible is an interactive mobile game that seeks to educate users about ocean pollution and the proper disposal of waste.
 
+Check out our website! 
+https://missionecopossible.weebly.com/
+
 Technical Coach: Ravin Jain 
 
 Graphics designed by: Fan Wang
