@@ -539,8 +539,7 @@ MonoBehaviour:
     of 5 Gyres is to \u201Cempower action against the global health crisis of plastic
     pollution through science, education, and adventure.\u201D Through their studies,
     5 Gyres has discovered 5.25 trillion particles of plastics and explored over
-    50,000 nautical miles in hopes of achieving a zero-waste environment. \n\nLearn
-    More: https://www.5gyres.org \n"
+    50,000 nautical miles in hopes of achieving a zero-waste environment. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -609,12 +608,12 @@ MonoBehaviour:
   m_margin: {x: 10.623569, y: 0, z: -430.5183, w: 0}
   m_textInfo:
     textComponent: {fileID: 519742435}
-    characterCount: 413
+    characterCount: 375
     spriteCount: 0
-    spaceCount: 64
-    wordCount: 66
+    spaceCount: 58
+    wordCount: 60
     linkCount: 0
-    lineCount: 7
+    lineCount: 5
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -978,7 +977,7 @@ MonoBehaviour:
     research, education and safety expertise to promote the North American waste
     and recycling industries, serve as their voice and create a climate where members
     prosper and provide safe, economically sustainable and environmentally sound
-    services\u201D.\n\nLearn More: https://wasterecycling.org/\n"
+    services\u201D.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -1047,12 +1046,12 @@ MonoBehaviour:
   m_margin: {x: 9.006786, y: 2.5081768, z: -447.3241, w: -114.048645}
   m_textInfo:
     textComponent: {fileID: 1050526187}
-    characterCount: 361
+    characterCount: 320
     spriteCount: 0
-    spaceCount: 46
-    wordCount: 47
+    spaceCount: 42
+    wordCount: 42
     linkCount: 0
-    lineCount: 7
+    lineCount: 5
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1305,7 +1304,7 @@ MonoBehaviour:
   m_text: "Ocean Conservancy is a nonprofit environmental advocacy group that works
     to protect our marine life and oceans using scientific-based solutions. They
     focus on \u201Clong-term solutions that promote a healthy ocean, abundant wildlife
-    and thriving coastal communities.\u201D\n\nLearn More: https://oceanconservancy.org/\n"
+    and thriving coastal communities.\u201D\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -1374,12 +1373,12 @@ MonoBehaviour:
   m_margin: {x: 6.504902, y: 0, z: -445.08847, w: -93.33348}
   m_textInfo:
     textComponent: {fileID: 1234114193}
-    characterCount: 306
+    characterCount: 263
     spriteCount: 0
-    spaceCount: 40
-    wordCount: 41
+    spaceCount: 36
+    wordCount: 36
     linkCount: 0
-    lineCount: 6
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
