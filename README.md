@@ -38,9 +38,12 @@ After the player collects the garbage at levels 2, 3 and 4, the player sorts all
 
 ## Installation
 
-Coming soon!
-
 ### App Store
+Download Mission Ecopossible for free here!
+https://apps.apple.com/us/app/mission-ecopossible/id1533615677
+
+### Google Play
+Coming soon!
 
 ## Building
 
