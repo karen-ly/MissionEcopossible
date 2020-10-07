@@ -43,7 +43,8 @@ Download Mission Ecopossible for free here!
 https://apps.apple.com/us/app/mission-ecopossible/id1533615677
 
 ### Google Play
-Coming soon!
+Download Mission Ecopossible for free here!
+https://play.google.com/store/apps/details?id=com.missionecopossible.MissionEcopossibleTest
 
 ## Building
 
