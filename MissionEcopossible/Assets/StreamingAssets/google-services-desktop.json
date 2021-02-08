@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "250934116366",
+    "project_id": "mission-ecopossible",
+    "storage_bucket": "mission-ecopossible.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250934116366:android:709870db42f65fb71abc5f",
+        "android_client_info": {
+          "package_name": "com.Ecoders.MissionEcopossible"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250934116366-tcr6o67kup45b0d5bnr97tllj54k73qk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD8zQaaaoIBTL9Fnv4C_cxld8jIlEFjNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250934116366-tcr6o67kup45b0d5bnr97tllj54k73qk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "250934116366-8n5aakud09i0p016olpisfa872bumoea.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Ecoders.MissionEcopossible"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
