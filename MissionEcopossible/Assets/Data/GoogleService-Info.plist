@@ -30,5 +30,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:250934116366:ios:a74c22ed1289eea81abc5f</string>
+	<key>DATABASE_URL</key>
+	<string>https://mission-ecopossible-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

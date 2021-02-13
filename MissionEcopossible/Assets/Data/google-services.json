@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "250934116366",
+    "firebase_url": "https://mission-ecopossible-default-rtdb.firebaseio.com",
     "project_id": "mission-ecopossible",
     "storage_bucket": "mission-ecopossible.appspot.com"
   },
